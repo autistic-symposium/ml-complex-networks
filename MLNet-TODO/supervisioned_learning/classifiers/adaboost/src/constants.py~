@@ -1,0 +1,9 @@
+#!/usr/bin/python
+# marina von steinkirch @2014
+# steinkirch at gmail
+
+
+INPUT_FILE = ["sampled", "entire_net"]
+SAMPLINGS_SETS = [50]#200, 100, 50]
+PERCENTAGE = 0.9 # percentage for training and test sets
+
