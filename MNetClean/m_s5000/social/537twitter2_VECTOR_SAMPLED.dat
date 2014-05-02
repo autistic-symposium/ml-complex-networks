@@ -1,0 +1,13 @@
+Size: 212
+Order: 5672
+Assortativity: -0.214
+Transitivity: 0.266
+Degree: 0.2536
+Coreness: 32.0
+Number_Triangles: 47.0
+Number_Cliques: 794
+Clique_Number: 12
+Clustering: 0.309
+Edge_connectivity: 0
+
+***********************************************

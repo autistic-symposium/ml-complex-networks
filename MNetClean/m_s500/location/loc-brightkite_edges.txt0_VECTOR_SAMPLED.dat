@@ -1,0 +1,24 @@
+Size: 8695
+Order: 20666
+Assortativity: -0.186
+Transitivity: 0.012
+Degree: 0.00055
+Coreness: 2.0
+Number_Triangles: 0.0
+Number_Cliques: 9028
+Clique_Number: 11
+Clustering: 0.015
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 10.0
+Diameter: 15
+Closeness: 0.01001
+Betweeness: 0.0
+Density: 0.000273380291882
+Radius: 8
+Isolates: 0
+Square_clust: 0.7037
+Communicability: 342393.23917
+
+***********************************************

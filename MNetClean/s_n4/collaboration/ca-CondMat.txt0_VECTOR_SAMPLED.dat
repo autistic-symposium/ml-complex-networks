@@ -1,0 +1,15 @@
+Size: 4476
+Order: 9408
+Assortativity: -0.297
+Transitivity: 0.09
+Degree: 0.00094
+Coreness: 2.0
+Num_Triangles: 6.0
+Num_Cliques: 5332
+Clique_Number: 15
+Clustering: 0.26
+Edge_conn: 1
+Eccentricity: 6.0
+Diameter: 7
+Closeness: 0.22011
+Betweeness: 0.0008
