@@ -10,12 +10,15 @@ import numpy as np
 from adaboost import AdaBoost
 from decision_stump import DecisionStump
 from error import calculate_error
-from constants import INPUT_FILE, SAMPLINGS_SETS, PERCENTAGE
+from constants import  SAMPLINGS_SETS, PERCENTAGE
 import bio
 import tech 
 import info 
 import social
 
+
+
+INPUT_FILE = ['all_neat', 'all_neat_n500', 'all_neat_n1500', 'all_neat_n2000', 'all_neat_n3000', "entire_net"]#, "sampled"]
 
 
 
@@ -37,7 +40,7 @@ def main():
     classifier = AdaBoost(DecisionStump)
 
     #for boosting interation
-    T = 80  
+    T = 50  
 
 
 
@@ -58,8 +61,8 @@ def main():
             # run  for all datasets
             for i in range(NUM_SETS):
 
-                DATA_TRAIN = '../data/input_' + net_type + '/' + str(NUM_SETS) + '/train_' + str(i) + "_.data"
-                DATA_TEST  = '../data/input_' + net_type + '/' + str(NUM_SETS) +'/test_' + str(i) + "_.data"
+                DATA_TRAIN = '../data/' + net_type + '/' + str(NUM_SETS) + '/train_' + str(i) + "_.data"
+                DATA_TEST  = '../data/' + net_type + '/' + str(NUM_SETS) +'/test_' + str(i) + "_.data"
 
                 # HERE IS THE DIFFERENCE FOR EACH NET
                 X_train, Y_train = bio.load_data(DATA_TRAIN)

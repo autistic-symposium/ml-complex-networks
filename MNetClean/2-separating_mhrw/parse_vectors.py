@@ -12,8 +12,8 @@ from collections import defaultdict
 #FOLDERS_OUT = ['m_s5000', 'm_s500', 's_n4', 'm_s1000']
 #FOLDERS_IN  = ['m_s5000/', 'm_s500/', 's_n4/', 'm_s1000/']
 
-FOLDERS_OUT = ['n2000', 'n1500']#, 'n500', 'n3000', ]
-FOLDERS_IN  = ['n2000/', 'n1500/']#', 'n3000/', 'n1500/']
+FOLDERS_OUT = ['n2000', 'n1500', 'n3000', 'n500', ]
+FOLDERS_IN  = ['n2000/', 'n1500/', 'n3000/', 'n500/']
 
 SUBFOLDERS = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed','social','webgraphs','wiki','yeast']
 FEATURES   = ['Size', 'Order', 'Assortativity', 'Transitivity', 'Degree', 'Coreness', 'Number_Triangles', 'Number_Cliques', 'Clique_Number', 'Clustering', 'Edge_connectivity', 'Eccentricity', 'Diameter', 'Closeness', 'Betweeness', 'Density', 'Radius', 'Square_clust', 'Communicability', 'Ave_Node_conn', 'Pagerank']

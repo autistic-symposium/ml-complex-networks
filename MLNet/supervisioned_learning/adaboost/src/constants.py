@@ -3,7 +3,7 @@
 # steinkirch at gmail
 
 
-INPUT_FILE = ["entire_net","sampled"]
-SAMPLINGS_SETS = [100, 200, 300]
-PERCENTAGE = 0.9 # percentage for training and test sets
+
+SAMPLINGS_SETS = [300, 200, 100, 50]
+PERCENTAGE = 0.8 # percentage for training and test sets
 

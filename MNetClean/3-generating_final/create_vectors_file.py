@@ -8,9 +8,9 @@ mari wahl @ 2014
 
 import os
 
-FOLDERS_IN  = ['n2000', 'n1500']#, 'n3000', 'n1500']
-#SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed','social','webgraphs','wiki','yeast']
-SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed']
+FOLDERS_IN  = ['n2000', 'n1500', 'n3000', 'n1500']
+SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed','social','webgraphs','wiki','yeast']
+
 
 
 if __name__ == '__main__':
