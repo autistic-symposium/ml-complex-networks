@@ -1,0 +1,23 @@
+Size: 72
+Assortativity: -0.104
+Transitivity: 0.012
+Degree: 0.05282
+Coreness: 1.0
+Number_Triangles: 0.0
+Number_Cliques: 74
+Clique_Number: 3
+Clustering: 0.029
+Edge_connectivity: 1
+
+***********************************************
+Eccentricity: 20.0
+Diameter: 28
+Closeness: 0.11079
+Density: 0.0528169014085
+Isolates: []
+Pagerank: 0.01389
+Square_clust: 0.37792
+Communicability: 6.76694
+
+***********************************************
+Ave_Node_conn: 1.011

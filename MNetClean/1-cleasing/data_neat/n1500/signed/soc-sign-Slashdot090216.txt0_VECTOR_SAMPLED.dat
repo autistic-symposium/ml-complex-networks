@@ -1,0 +1,26 @@
+Size: 87
+Order: 84
+Assortativity: 0.199
+Transitivity: 0.0
+Degree: 0.02245
+Coreness: 0.0
+Number_Triangles: 0.0
+Number_Cliques: 84
+Clique_Number: 2
+Clustering: 0.0
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 1.0
+Diameter: 1
+Closeness: 0.01009
+Betweeness: 0.0
+Density: 0.0112269446672
+Radius: 1
+Isolates: [16908, 50758, 43604, 51826, 67194, 52877, 4264, 38084, 32973, 67850, 28503, 78839]
+Pagerank: 0.01149
+Square_clust: 0.0613
+Communicability: 1.58135
+
+***********************************************
+Ave_Node_conn: 0.001

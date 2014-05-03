@@ -8,22 +8,30 @@ mari wahl @ 2014
 
 import os
 
-
-SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','onlinecom','p2p','products','road','signed','social','webgraphs','wiki','yeast']
+FOLDERS_IN  = ['n2000', 'n1500']#, 'n3000', 'n1500']
+#SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed','social','webgraphs','wiki','yeast']
+SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed']
 
 
 if __name__ == '__main__':
 
-    final_file = open('all_nets.data', "w")
+    #final_file = open('all_nets.data', "w")
+    final_file_together = open('all_neat.data', "w")
 
-    # Loop into all the network folders
-    for i in range(len(SUBFILES)):
+    for j in range(len(FOLDERS_IN)):        
+        #final_file = open('all_nets_.data', "w")
+        final_file = open('all_neat_' + FOLDERS_IN[j] + '.data', "w")
 
-        INPUT_PATH = 'vectors/' + SUBFILES[i] + '.data'
-        tempfile = open(INPUT_PATH)
+        # Loop into all the network folders
+        for i in range(len(SUBFILES)):
 
-        print 'Processing ' + INPUT_PATH 
-        final_file.write(tempfile.read())
-          
+            INPUT_PATH = 'vectors_neat/' + SUBFILES[i] + '_' +  FOLDERS_IN[j] + '.data'
+            tempfile = open(INPUT_PATH)
+
+            print 'Processing ' + INPUT_PATH 
+            aux = tempfile.read()
+            final_file.write(aux)
+            final_file_together.write(aux)
+
 
     print '\nDone!!!'
