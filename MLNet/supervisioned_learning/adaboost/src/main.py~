@@ -46,7 +46,7 @@ def main():
     '''
         INFO networks
     '''
-    OUT = '../output/INFO'
+    OUT = '../output/TECH'
     for net_type in INPUT_FILE:
         for NUM_SETS  in SAMPLINGS_SETS:
             
