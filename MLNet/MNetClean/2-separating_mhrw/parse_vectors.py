@@ -12,8 +12,8 @@ from collections import defaultdict
 #FOLDERS_OUT = ['m_s5000', 'm_s500', 's_n4', 'm_s1000']
 #FOLDERS_IN  = ['m_s5000/', 'm_s500/', 's_n4/', 'm_s1000/']
 
-FOLDERS_OUT = ['n2000', 'n1500', 'n500', 'n3000', ]
-FOLDERS_IN  = ['n2000/', 'n1500/', 'n500/', 'n3000/']
+FOLDERS_OUT = ['n2000',  'n3000', 'n500', ]
+FOLDERS_IN  = ['n2000/',  'n3000/', 'n500/']
 
 SUBFOLDERS = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','meme','metabolic','products','road','signed','social','webgraphs','wiki','yeast']
 FEATURES   = ['Size', 'Order', 'Assortativity', 'Transitivity', 'Degree', 'Coreness', 'Number_Triangles', 'Number_Cliques', 'Clique_Number', 'Clustering', 'Edge_connectivity', 'Eccentricity', 'Diameter', 'Closeness', 'Betweeness', 'Density', 'Radius', 'Square_clust', 'Communicability', 'Ave_Node_conn', 'Pagerank']
@@ -35,7 +35,7 @@ def parse_feature_vector(fraw):
     return d
 
 
-def save_vectors(d, output):
+def save_vectors(d, output, network):
     '''
         Salve output vector
     '''
@@ -46,10 +46,20 @@ def save_vectors(d, output):
                 if value:
                     f.write( value)
                 else:
-                    f.write( '-')
-                    #f.write( '0')
-                if feat != FEATURES[-1]:
-                    f.write( ',')
+                    f.write( '0')
+                f.write( ',')
+
+            # Add the class label
+            # 1 - bio, 2 - info, 3 - social, 4 - tech          
+            if  network == 'atlas' or network == 'carbon' or network == 'cellular' or network == 'metabolic' or network == 'yeast':
+                f.write('1')
+            elif  network == 'auto' or network == 'road':
+                f.write('4')
+            elif  network == 'citation' or network == 'collaboration' or network == 'communication' or network == 'meme' or network == 'p2p' or network == 'products' or network == 'webgraphs' or network == 'wiki':
+                f.write('2')
+            elif  network == 'onlinecom' or network == 'ground' or network == 'location' or network == 'signed' or network == 'social':
+                f.write('3')
+               
         f.write('\n')
 
 
@@ -58,17 +68,6 @@ if __name__ == '__main__':
 
     # Loop into all the data folders
     for i in range(len(FOLDERS_IN)):
-
-        # Loop into all the network folders
-        for folder in SUBFOLDERS:
-
-            # Create the vector file and save some label info
-            OUTPUT_PATH =  'vectors_neat/' + folder + '_' + FOLDERS_OUT[i] + '.data'
-            with open(OUTPUT_PATH, "w") as f:
-                    f.write('#')
-                    for feat in FEATURES:
-                        f.write(feat + ' ')
-                    f.write('\n')
 
         # Loop again, now saving the values for each file
         for folder in SUBFOLDERS:
@@ -82,7 +81,7 @@ if __name__ == '__main__':
                     d = parse_feature_vector(INPUT_PATH + fraw)
 
                     # save the dictionary in files
-                    save_vectors(d, OUTPUT_PATH)
+                    save_vectors(d, OUTPUT_PATH, folder)
           
 
 

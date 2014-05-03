@@ -8,7 +8,7 @@ import random
 import numpy as np
 from constants import SAMPLINGS_SETS, PERCENTAGE
 
-INPUT_FILE = ['all_neat', 'all_neat_n500', 'all_neat_n1500', 'all_neat_n2000', 'all_neat_n3000',]#"all_nets", "all_nets_entire"]
+INPUT_FILE = ['all_neat', 'all_neat_n500', 'all_neat_n2000', 'all_neat_n3000',]#"all_nets", "all_nets_entire"]
 
 
 def save_result_split(final, name):
