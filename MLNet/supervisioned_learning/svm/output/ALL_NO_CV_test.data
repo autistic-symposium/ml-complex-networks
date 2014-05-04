@@ -1,0 +1,6 @@
+# net name, net number, dataset, accur LinearSVC, accur SVC(rgb)
+all_neat,0.763605442177,0.960034013605
+all_neat_n1500,0.873076923077,0.915384615385
+all_neat_n2000,0.90060851927,0.967545638945
+all_neat_n500,0.77304964539,0.966903073286
+all_nets_entire,0.642857142857,0.5

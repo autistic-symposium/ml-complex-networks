@@ -1,0 +1,77 @@
+Size: 7115
+Order: 103689
+Assortativity: -0.083
+Transitivity: 0.053
+Degree: 0.0041
+Coreness: 15.0
+Number_Triangles: 0.0
+Number_Cliques: 8280
+Clique_Number: 7
+Clustering: 0.019
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 4.0
+Diameter: 9
+Closeness: 0.07317
+Betweeness: 1e-05
+Density: 0.00204853751108
+Radius: 3
+Isolates: []
+Pagerank: 0.00014
+Square_clust: 0.01585
+Communicability: 63503.33519
+
+***********************************************
+Size: 1744
+Order: 2673
+Assortativity: 0.141
+Transitivity: 0.002
+Degree: 0.00176
+Coreness: 1.0
+Number_Triangles: 0.0
+Number_Cliques: 1730
+Clique_Number: 2
+Clustering: 0.0
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 20.0
+Diameter: 28
+Closeness: 0.01393
+Betweeness: 0.0
+Density: 0.000879336480917
+Radius: 13
+Isolates: [8209, 8276, 8288, 389, 390, 806, 864, 881, 1092, 1220, 1287, 1330, 1920, 2073, 2202, 2386, 2579, 2670, 2794, 2797, 2814, 2843, 3319, 3429, 3464, 3580, 3713, 3811, 4049, 4173, 4583, 4876, 5058, 5146, 5364, 5368, 5481, 5533, 5564, 5832, 5880, 6080, 6101, 6267, 6407, 6472, 6553, 6680, 6715, 6724, 6806, 6860, 6942, 6982, 7042, 7074, 7423, 7662, 7797, 7799, 7840, 7979, 7982, 8024, 8068, 8122, 8139, 8149]
+Pagerank: 0.00057
+Square_clust: 0.09156
+Communicability: 1.7697
+
+***********************************************
+Eccentricity: 20.0
+Size: 716
+Order: 828
+Assortativity: 0.083
+Transitivity: 0.0
+Degree: 0.00323
+Coreness: 1.0
+Number_Triangles: 0.0
+Number_Cliques: 712
+Clique_Number: 2
+Clustering: 0.0
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 3.0
+Diameter: 4
+Closeness: 0.00233
+Betweeness: 0.0
+Density: 0.00161737703637
+Radius: 2
+Isolates: [8198, 2101, 4466, 929, 4359, 4583, 4648, 609, 6777, 2794, 4954, 2926, 3023, 1007, 7161, 7290, 5308, 1250, 5364, 1277, 5463, 5513, 6723, 7574, 2977, 1485, 6600, 7778, 1300, 5863, 8090, 6054, 8149, 6106]
+Pagerank: 0.0014
+Square_clust: 0.04795
+Communicability: 1.56129
+
+***********************************************
+Ave_Node_conn: 0.0

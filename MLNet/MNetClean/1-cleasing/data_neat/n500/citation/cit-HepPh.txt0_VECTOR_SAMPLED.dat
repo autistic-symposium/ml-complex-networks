@@ -1,0 +1,26 @@
+Size: 1345
+Order: 1562
+Assortativity: 0.057
+Transitivity: 0.02
+Degree: 0.00173
+Coreness: 1.0
+Number_Triangles: 0.0
+Number_Cliques: 1345
+Clique_Number: 1
+Clustering: 0.0
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 0.0
+Diameter: 0
+Closeness: 0.00093
+Betweeness: 0.0
+Density: 0.000864090989556
+Radius: 0
+Isolates: [9611271, 9512295, 9304202, 9304223, 9304271, 9810251, 9708235, 9612211, 9309265, 9305240, 9307296, 9301251, 204159, 9401227, 9501271, 9504280, 9801389, 9403355, 9405405]
+Pagerank: 0.00074
+Square_clust: 0.06265
+Communicability: 1.54806
+
+***********************************************
+Ave_Node_conn: 0.0

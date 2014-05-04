@@ -7,31 +7,30 @@
 import random
 import sklearn.svm  as sklsvm
 import numpy as np
-import bio
-import tech 
-import info 
-import social
 
 
-PERCENTAGE = 0.8
-INPUT_FILE = ['all_neat',  'all_neat_n2000', "all_nets_entire"]#,  'all_neat_n1500','all_neat_n500', 'all_neat_n3000',"sampled"]
+INPUT_FILE = ['all_neat', 'all_neat_n1500', 'all_neat_n2000', 'all_neat_n500', "all_nets_entire"]
 
 
 
-def save_result_final(final, score, output_file):
+def save_result_final(net_type, output_file, aver_error, aver_error_SVC):
     ''' Save in a file the final result '''
 
-    with open(output_file, "w") as f:
-        for i in range(len(final)):
-            f.write(str(final[i]) + "," + str(score[i])+ ',' + str(i+1) + "\n")
+    with open(output_file, "a") as f:
+        f.write(net_type +',' + str(aver_error) + ","  + str(aver_error_SVC) + "\n")
 
 
-
-def fit_model(data, truth):
-    model = sklsvm.LinearSVC() 
+def fit_model(data, truth, Chere=1.0):
+    # Dual select the algorithm to either solve the dual or primal optimization problem. Prefer dual=False when n_samples > n_features.
+    model = sklsvm.LinearSVC(dual=False, C=Chere) 
     model = model.fit(data, truth) 
     return model
 
+
+def fit_model_SVC(data, truth):
+    model = sklsvm.SVC() 
+    model = model.fit(data, truth) 
+    return model   
 
 
 def classify_data(model, data, truth):
@@ -40,198 +39,55 @@ def classify_data(model, data, truth):
     return float(right) / truth.shape[0]
     
 
+def load_data(datafile_name):
+     ''' Load the data and separate it by feature
+         and labels '''
+     data = np.loadtxt(datafile_name, delimiter = ',')
 
-def save_result_split(final, name):
-    with open(name , "w") as f:
-        for i in range(len(final)):
-            f.write(str(final[i]) + "\n")
+     # features
+     X = data[:,:-1] 
 
+     # label
+     Y = data[:,-1]
+     return X, Y
 
-
-def split_data(input_file, output_file):
-    ''' split data for training and test sets '''
-
-    with open(input_file, "rb") as f:
-        data = f.read().split('\n')
-
-    border = int(PERCENTAGE*len(data))
-    random.shuffle(data)
-
-    train_data = data[:border][:]
-    test_data = data[border:][:]
-
-    OUTPUT_FILE_TRAIN  = output_file + "_train_.data"
-    OUTPUT_FILE_TEST   = output_file + "_test_.data"
-
-    save_result_split(train_data, OUTPUT_FILE_TRAIN)
-    save_result_split(test_data, OUTPUT_FILE_TEST)
 
 
 
 def main():
 
-    for net_type in INPUT_FILE:
-        input_file = '../data/no_cv/' + net_type + '.data' 
-        output_file = '../data/no_cv/' + net_type
-        split_data(input_file, output_file)
-   
 
-    '''
-        INFO networks
-    '''
-    OUT = '../output/INFO_NO_CV_'
-    print 'Starting info nets...'
+    OUTPUT_FILE_TRAIN = '../output/ALL_NO_CV_train.data'
+    with open(OUTPUT_FILE_TRAIN , "w") as f:
+        f.write('# net name, net number, dataset, accur LinearSVC, accur SVC(rgb)\n')
 
-
-    for net_type in INPUT_FILE:
-        aver_error_train = []
-        aver_error_test = []
-        score_train = []
-        score_test = []
-
-        DATA_TRAIN = '../data/no_cv/' + net_type + '_test_.data' 
-        DATA_TEST = '../data/no_cv/' + net_type + '_test_.data' 
-
-        # HERE IS THE DIFFERENCE FOR EACH NET
-        learn_data_X, learn_data_Y = info.load_data(DATA_TRAIN)
-        predict_data_X, predict_data_Y = info.load_data(DATA_TEST)
-
-        # classifier
-        model = fit_model(learn_data_X, learn_data_Y)
- 
-        accuracy_train = classify_data(model, learn_data_X, learn_data_Y) 
-        accuracy_test = classify_data(model, predict_data_X, predict_data_Y)
+    OUTPUT_FILE_TEST = '../output/ALL_NO_CV_test.data'
+    with open(OUTPUT_FILE_TEST , "w") as f:
+        f.write('# net name, net number, dataset, accur LinearSVC, accur SVC(rgb)\n')
         
-        aver_error_train.append(accuracy_train)    
-        aver_error_test.append(accuracy_test) 
-
-        score_train.append(model.score(learn_data_X, learn_data_Y))    
-        score_test.append(model.score(predict_data_X, predict_data_Y))   
-
-        # save to file to plot
-        print 'Saving final files ...'  
-        OUTPUT_FILE_TRAIN = OUT + '_train_' + net_type + '_.data' 
-        OUTPUT_FILE_TEST =  OUT + '_test_'  + net_type + '_.data' 
-            
-        save_result_final(aver_error_train, score_train, OUTPUT_FILE_TRAIN)
-        save_result_final(aver_error_test, score_test, OUTPUT_FILE_TEST)
-
-
-    '''
-        TECH networks
-    '''
-    OUT = '../output/TECH_NO_CV_'
-    print 'Starting info nets...'
-
+   
     for net_type in INPUT_FILE:
-        aver_error_train = []
-        aver_error_test = []
-        score_train = []
-        score_test = []
-
-        DATA_TRAIN = '../data/no_cv/' + net_type + '_test_.data' 
-        DATA_TEST = '../data/no_cv/' + net_type + '_test_.data' 
+        DATA_TRAIN = '../data/no_cv/' + net_type + '_train.data' 
+        DATA_TEST = '../data/no_cv/' + net_type + '_test.data' 
 
         # HERE IS THE DIFFERENCE FOR EACH NET
-        learn_data_X, learn_data_Y = tech.load_data(DATA_TRAIN)
-        predict_data_X, predict_data_Y = tech.load_data(DATA_TEST)
+        learn_data_X, learn_data_Y = load_data(DATA_TRAIN)
+        predict_data_X, predict_data_Y = load_data(DATA_TEST)
 
-        # classifier
+        # classifier linear
         model = fit_model(learn_data_X, learn_data_Y)
-        accuracy_train = classify_data(model, learn_data_X, learn_data_Y) 
-        accuracy_test = classify_data(model, predict_data_X, predict_data_Y)
-                                       
-        aver_error_train.append(accuracy_train)    
-        aver_error_test.append(accuracy_test) 
+        aver_error_train = classify_data(model, learn_data_X, learn_data_Y) 
+        aver_error_test = classify_data(model, predict_data_X, predict_data_Y)
 
-        score_train.append(model.score(learn_data_X, learn_data_Y))    
-        score_test.append(model.score(predict_data_X, predict_data_Y))      
+        # classifier SVC
+        model_SVC = fit_model_SVC(learn_data_X, learn_data_Y)
+        aver_error_train_SVC = classify_data(model_SVC, learn_data_X, learn_data_Y) 
+        aver_error_test_SVC = classify_data(model_SVC, predict_data_X, predict_data_Y)
 
-        # save to file to plot
-        print 'Saving final files ...'  
-        OUTPUT_FILE_TRAIN = OUT + '_train_' + net_type + '_.data' 
-        OUTPUT_FILE_TEST =  OUT + '_test_'  + net_type + '_.data' 
-            
-        save_result_final(aver_error_train, score_train, OUTPUT_FILE_TRAIN)
-        save_result_final(aver_error_test, score_test, OUTPUT_FILE_TEST)
+        # Saving
+        save_result_final(net_type, OUTPUT_FILE_TRAIN, aver_error_train, aver_error_train_SVC)
+        save_result_final(net_type, OUTPUT_FILE_TEST, aver_error_test, aver_error_test_SVC)
 
-
-    '''
-        SOCIAL networks
-    '''
-    OUT = '../output/SOCIAL_NO_CV_'
-    print 'Starting info nets...'
-
-    for net_type in INPUT_FILE:
-        aver_error_train = []
-        aver_error_test = []
-        score_train = []
-        score_test = []
-
-        DATA_TRAIN = '../data/no_cv/' + net_type + '_test_.data' 
-        DATA_TEST = '../data/no_cv/' + net_type + '_test_.data' 
-
-        # HERE IS THE DIFFERENCE FOR EACH NET
-        learn_data_X, learn_data_Y = social.load_data(DATA_TRAIN)
-        predict_data_X, predict_data_Y = social.load_data(DATA_TEST)
-
-        # classifier
-        model = fit_model(learn_data_X, learn_data_Y)
-        accuracy_train = classify_data(model, learn_data_X, learn_data_Y) 
-        accuracy_test = classify_data(model, predict_data_X, predict_data_Y)
-                                       
-        aver_error_train.append(accuracy_train)    
-        aver_error_test.append(accuracy_test) 
-
-        score_train.append(model.score(learn_data_X, learn_data_Y))    
-        score_test.append(model.score(predict_data_X, predict_data_Y))      
-
-        # save to file to plot
-        print 'Saving final files ...'  
-        OUTPUT_FILE_TRAIN = OUT + '_train_' + net_type + '_.data' 
-        OUTPUT_FILE_TEST =  OUT + '_test_'  + net_type + '_.data' 
-            
-        save_result_final(aver_error_train, score_train, OUTPUT_FILE_TRAIN)
-        save_result_final(aver_error_test, score_test, OUTPUT_FILE_TEST)
-
-
-    '''
-        BIO networks
-    '''
-    OUT = '../output/BIO_NO_CV_'
-    print 'Starting info nets...'
-
-    for net_type in INPUT_FILE:
-        aver_error_train = []
-        aver_error_test = []
-        score_train = []
-        score_test = []
-
-        DATA_TRAIN = '../data/no_cv/' + net_type + '_test_.data' 
-        DATA_TEST = '../data/no_cv/' + net_type + '_test_.data' 
-
-        # HERE IS THE DIFFERENCE FOR EACH NET
-        learn_data_X, learn_data_Y = bio.load_data(DATA_TRAIN)
-        predict_data_X, predict_data_Y = bio.load_data(DATA_TEST)
-
-        # classifier
-        model = fit_model(learn_data_X, learn_data_Y)
-        accuracy_train = classify_data(model, learn_data_X, learn_data_Y) 
-        accuracy_test = classify_data(model, predict_data_X, predict_data_Y)
-                                       
-        aver_error_train.append(accuracy_train)    
-        aver_error_test.append(accuracy_test) 
-
-        score_train.append(model.score(learn_data_X, learn_data_Y))    
-        score_test.append(model.score(predict_data_X, predict_data_Y))      
-
-        # save to file to plot
-        print 'Saving final files ...'  
-        OUTPUT_FILE_TRAIN = OUT + '_train_' + net_type + '_.data' 
-        OUTPUT_FILE_TEST =  OUT + '_test_'  + net_type + '_.data' 
-            
-        save_result_final(aver_error_train, score_train, OUTPUT_FILE_TRAIN)
-        save_result_final(aver_error_test, score_test, OUTPUT_FILE_TEST)
 
 
     print 'Done!!!'
