@@ -2,8 +2,7 @@
 # marina von steinkirch @2014
 # steinkirch at gmail
 
-''' This program shows the application of boosting for weak
-    classifiers given by decision stumps '''
+''' This program shows the application of svm for sampled '''
 
 
 import sklearn.svm  as sklsvm
@@ -25,14 +24,19 @@ def save_result_final(final, output_file):
 
     with open(output_file, "w") as f:
         for i in range(len(final)):
-            f.write(str(final[i]) + "," + str(i+1) + "\n")
+            f.write(str(final[i]) + ',' + str(i+1) + "\n")
 
 
 def fit_model(data, truth):
+    #model = sklsvm.LinearSVC() # better
     model = sklsvm.SVC()
-    model = model.fit(data, truth)
+
+    model = model.fit(data, truth) 
     return model
 
+
+def probability(model, data):
+    print model.predict_proba(data)
 
 
 def classify_data(model, data, truth):
@@ -51,12 +55,11 @@ def main():
 
     print 'Starting info nets...'
 
-    aver_error_train = []
-    aver_error_test = []
 
     for net_type in INPUT_FILE:
         for NUM_SETS  in SAMPLINGS_SETS:
-
+	    aver_error_train = []
+            aver_error_test = []
 
             # run  for all datasets
             for i in range(NUM_SETS):
@@ -72,7 +75,7 @@ def main():
 
                 # classifier
                 model = fit_model(learn_data_X, learn_data_Y)
-                accuracy_train = classify_data(model, learn_data_X, learn_data_Y) 
+                accuracy_train  = classify_data(model, learn_data_X, learn_data_Y) 
                 accuracy_test = classify_data(model, predict_data_X, predict_data_Y)
                                        
                 aver_error_train.append(accuracy_train)    
@@ -87,6 +90,7 @@ def main():
             save_result_final(aver_error_test, OUTPUT_FILE_TEST)
 
 
+
     '''
         tech networks
     '''
@@ -94,12 +98,11 @@ def main():
 
     print 'Starting tech nets...'
 
-    aver_error_train = []
-    aver_error_test = []
 
     for net_type in INPUT_FILE:
         for NUM_SETS  in SAMPLINGS_SETS:
-
+	    aver_error_train = []
+    	    aver_error_test = []
 
             # run  for all datasets
             for i in range(NUM_SETS):
@@ -137,12 +140,12 @@ def main():
 
     print 'Starting social nets...'
 
-    aver_error_train = []
-    aver_error_test = []
+
 
     for net_type in INPUT_FILE:
         for NUM_SETS  in SAMPLINGS_SETS:
-
+	    aver_error_train = []
+            aver_error_test = []
 
             # run  for all datasets
             for i in range(NUM_SETS):
@@ -183,12 +186,11 @@ def main():
 
     print 'Starting bio nets...'
 
-    aver_error_train = []
-    aver_error_test = []
-
+ 
     for net_type in INPUT_FILE[:-2]:
         for NUM_SETS  in SAMPLINGS_SETS:
-
+	    aver_error_train = []
+            aver_error_test = []
 
             # run  for all datasets
             for i in range(NUM_SETS):

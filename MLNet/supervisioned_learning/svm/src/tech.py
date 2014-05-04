@@ -21,10 +21,10 @@ def load_data(datafile_name):
          use it as a label, setting 2 -> -1 '''
          # THIS IS WHERE EVERY NETWORK IS DIFFERENT
      Y = data[:,-1]
-     Y[Y==1] = -1  
-     Y[Y==2] = -1  
-     Y[Y==3] = -1 
-     Y[Y==4] = 1 
+     #Y[Y==1] = -1  
+     #Y[Y==2] = -1  
+     #Y[Y==3] = -1 
+     #Y[Y==4] = 1 
  
      return X, Y
 

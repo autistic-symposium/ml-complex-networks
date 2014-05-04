@@ -1,0 +1,18 @@
+Analysing Nets with SVM
+===========================================================
+
+Support Vector Machines try to find a combination of samples to build a plane maximizing the margin between the two classes. 
+
+
+Description
+-----------
+
+Here analyse our nets using SVM with one-against-all and all-against all. We report the training and test errors.
+Cross validation sets were for 300, 200, 100 and 50.
+
+* Entire Nets folder:
+Performed for the entire nets, with the features that were possible to be extracted from these large graphs, divided by cross-validation sets. From these results we can evaluate the vality of the chose division for networks (info, social, bio, and tech).
+
+* Sampling Nets folder:
+Perfomed for the sampled nets, divided by cross-validation sets. We test for all features (missing have 0 values) and for the 10 first features (that do not present missing values).
+
