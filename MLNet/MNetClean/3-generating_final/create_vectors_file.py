@@ -8,7 +8,7 @@ mari wahl @ 2014
 
 import os
 
-FOLDERS_IN  = ['n2000',  'n500', 'n1500']
+FOLDERS_IN  = ['n2000',  'n500',  'n5000', 'n1000','n1500', ]
 SUBFILES = ['atlas', 'auto', 'carbon', 'cellular', 'citation','collaboration','communication', 'ground','location','metabolic','products','road','signed',  'social', 'yeast','webgraphs',]
 
 

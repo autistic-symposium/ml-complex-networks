@@ -9,7 +9,7 @@ import numpy as np
 
 
 PERCENTAGE = 0.8
-INPUT_FILE = ['all_neat',  'all_neat_n2000', 'all_neat_n1500', 'all_neat_n500', "all_nets_entire"]#,  'all_neat_n1500','all_neat_n500', 'all_neat_n3000',"sampled"]
+INPUT_FILE = ['all_neat',  'all_neat_n2000', 'all_neat_n1500', 'all_neat_n500', "all_nets_entire",'all_neat_n5000', 'all_neat_n1000']
 
 
 

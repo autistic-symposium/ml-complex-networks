@@ -10,7 +10,7 @@ import numpy as np
 from constants import  SAMPLINGS_SETS, PERCENTAGE
 
 
-INPUT_FILE = ['all_neat', 'all_neat_n1500', 'all_neat_n2000', 'all_neat_n500', "all_nets_entire"]#,  'all_neat_n500', 'all_neat_n3000',"sampled"]
+INPUT_FILE = ['all_neat', 'all_neat_n1500', 'all_neat_n2000', 'all_neat_n500', "all_nets_entire", 'all_neat_n5000']#,  'all_neat_n500', 'all_neat_n3000',"sampled"]
 
 
 
@@ -57,7 +57,7 @@ def main():
         print 'Starting ' + net_name + '...'
         for net_type in INPUT_FILE:
             for NUM_SETS  in SAMPLINGS_SETS:
-    	    aver_error_train = []
+    	        aver_error_train = []
                 aver_error_test = []
 
                 # run  for all datasets
@@ -83,7 +83,7 @@ def main():
                 # save to file to plot
                 print 'Saving final files ...'  
                 OUTPUT_FILE_TRAIN = '../output/' + net_name + '_train_' + net_type + str(NUM_SETS) + '_.data' 
-                OUTPUT_FILE_TEST =  '../output/' + net_name +  + '_test_'   + net_type + str(NUM_SETS) + '_.data' 
+                OUTPUT_FILE_TEST =  '../output/' + net_name + '_test_'  + net_type + str(NUM_SETS) + '_.data' 
                 
                 save_result_final(aver_error_train, OUTPUT_FILE_TRAIN)
                 save_result_final(aver_error_test, OUTPUT_FILE_TEST)
