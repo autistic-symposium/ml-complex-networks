@@ -41,7 +41,7 @@ Perfomed for the sampled nets, divided by cross-validation sets. We test for all
 Multiclassification
 -------------------
 
-Weimplement the “one-against-one” approach (Knerr et al., 1990) for multi- class classification. If n_class is the number of classes, then:
+We implement the “one-against-one” approach (Knerr et al., 1990) for multi- class classification. If n_class is the number of classes, then:
 n_class * (n_class - 1) / 2 
 classifiers are constructed and each one trains data from two classes:
 
@@ -63,6 +63,7 @@ Support Vector Machine algorithms are not scale invariant, so it is highly recom
 Scalling
 --------
 Standardization of datasets is a common requirement for many machine learning estimators implemented in the scikit: they might behave badly if the individual feature do not more or less look like standard normally distributed data: Gaussian with zero mean and unit variance.
+
 In practice we often ignore the shape of the distribution and just transform the data to center it by removing the mean value of each feature, then scale it by dividing non-constant features by their standard deviation.
 For instance, many elements used in the objective function of a learning algorithm (such as the RBF kernel of Support Vector Machines or the l1 and l2 regularizers of linear models) assume that all features are centered around zero and have variance in the same order. If a feature has a variance that is orders of magnitude larger that others, it might dominate the objective function and make the estimator unable to learn from other features correctly as expected.
 

@@ -22,8 +22,7 @@ net_type = 'all_neat_n500'
 DATA_TRAIN = './data/' + net_type + '_train.data' 
 data = np.loadtxt(DATA_TRAIN, delimiter = ',')
 
-X = data[:,1:3]
-y = data[:,-1]
+X = data[:,1:31]
 
 h = .02  # step size in the mesh
 
