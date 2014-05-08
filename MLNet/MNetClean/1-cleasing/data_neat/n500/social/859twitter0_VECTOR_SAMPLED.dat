@@ -1,0 +1,52 @@
+Size: 33
+Order: 358
+Assortativity: 0.003
+Transitivity: 0.598
+Degree: 0.67803
+Coreness: 14.0
+Number_Triangles: 24.0
+Number_Cliques: 45
+Clique_Number: 7
+Clustering: 0.504
+Edge_connectivity: 0
+
+***********************************************
+Size: 29
+Order: 266
+Assortativity: 0.114
+Transitivity: 0.489
+Degree: 0.65517
+Coreness: 12.0
+Number_Triangles: 5.0
+Number_Cliques: 36
+Clique_Number: 5
+Clustering: 0.371
+Edge_connectivity: 0
+
+***********************************************
+Size: 33
+Order: 356
+Assortativity: -0.02
+Transitivity: 0.599
+Degree: 0.67424
+Coreness: 14.0
+Number_Triangles: 24.0
+Number_Cliques: 45
+Clique_Number: 7
+Clustering: 0.504
+Edge_connectivity: 0
+
+***********************************************
+Size: 28
+Order: 227
+Assortativity: 0.02
+Transitivity: 0.411
+Degree: 0.60053
+Coreness: 9.0
+Number_Triangles: 2.0
+Number_Cliques: 35
+Clique_Number: 4
+Clustering: 0.221
+Edge_connectivity: 0
+
+***********************************************

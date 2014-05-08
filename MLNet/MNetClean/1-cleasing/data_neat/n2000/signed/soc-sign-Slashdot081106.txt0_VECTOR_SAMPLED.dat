@@ -1,0 +1,26 @@
+Size: 143
+Order: 138
+Assortativity: 0.419
+Transitivity: 0.375
+Degree: 0.01359
+Coreness: 0.0
+Number_Triangles: 0.0
+Number_Cliques: 138
+Clique_Number: 3
+Clustering: 0.021
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 1.0
+Diameter: 1
+Closeness: 0.00623
+Betweeness: 0.0
+Density: 0.00679602088053
+Radius: 1
+Isolates: [27174, 16464, 50285, 30855, 1680, 6289, 11411, 14486, 3223, 9894, 712, 70360, 38617, 53489, 74490, 65295, 25885, 12578, 58186, 42836, 34146, 44388, 24450, 39310, 45461, 48053, 19390, 11213, 27108, 65510, 43512, 506]
+Pagerank: 0.00699
+Square_clust: 0.06793
+Communicability: 1.68925
+
+***********************************************
+Ave_Node_conn: 0.001

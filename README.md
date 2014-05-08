@@ -1,66 +1,37 @@
-MNet 4.0 - Complex Network Analysis Package
-===========================================
+MLNet - Classifying Complex Networks with Machine Learning
+===========================================================
 
-Extraction and analysis of several graph features from publicly available datasets using NetworkX.
+Summary
+-------
 
-Analyzed Features:
+The study of  complex networks pervades all of the science. We can assign complex networks into four general classes (although there is some overlap between them):  technological networks (e.g., internet, the telephone network, power grids, transportation network),  information networks (e.g., the world wide web, citation networks),   biological networks (e.g., biochemical network, neutral networks, ecological networks), and  social networks. 
+
+Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks. 
+
+Features
+--------
+
+The feature vectors were extracting using MNet:
+https://github.com/mariwahl/MNet-Network-Analysis
+
+We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated).
+
+These vectors are parsed and cleansed using MNetClean, available inside this package.
+
+Feature Section and Classifiers
+------------------------------
+
+We perform classification of the network features using many classifiers:
+- SVM (supervisioned)
+- Naive Bayes (supervisioned)
+- Logistic Regression (supervisioned)
+- Adaboost (supervisioned)
+- EM (unsupervisioned)
+
+The source code is available under the MLNet folder.
+
+
+Analysis and Plots
 ------------------
 
-1* Assortativity
-2* Clique number
-3* Clustering
-4* Density
-5* Diameter
-6* Edge connectivity
-7* Node connectivity
-8* Number of cliques
-9* Number of edges
-10* Number of nodes
-11* Radius
-12* Clustering and Transitivity
-13* Betweeness centrality
-14* Closeness centrality
-15* Communicability centrality
-16* Coreness
-17* Degree centrality
-18* Eccentricity
-19* Number of triangles
-20* Pagerank
-21* Square clustering
-22* Transitivity
-
-
-
-
-
-Networks:
----------
-1* Social networks: online social networks, edges represent interactions between people
-2* Ground truth: ground-truth network communities in social and information networks 
-3* Communication: email communication networks with edges representing communication
-4* Citation: nodes represent papers, edges represent citations
-5* Collaboration: nodes represent scientists, edges represent collaborations (co-authoring a paper)
-6* Web graphs: nodes represent webpages and edges are hyperlinks
-7* Products: nodes represent products and edges link commonly co-purchased products
-8* p2p: nodes represent computers and edges communication
-9* Roads: nodes represent intersections and edges roads connecting the intersections
-10* Autonomous systems: graphs of the internet
-11* Signed networks: networks with positive and negative edges (friend/foe, trust/distrust)
-12* Location based networks: Social networks with geographic check-ins
-13* Wikipedia: Talk, editing and voting data from Wikipedia
-14* Bio Atlas: Food-webs  selected from Ecosystem Network Analysis site and from ATLSS.                 
-15* Bio Cellular: Substrate in cellular network of corresponding organism.     
-16* Bio Metabolic: Metabolic network of corresponding organism.      
-17* Bio Carbon: Carbon exchanges in the cypress wetlands of South Florida during the wet and dry season. 
-18* Bio Yeast: Protein-protein interaction network in budding yeast.  
-
-
-
-Normalization and Graph sampling:
----------------------------------
-Performed using snowball sampling (choosing the sample order, i.e. number of nodes). Optimized for number of edges and multiple samplings.
-
-
-
-Mari Wahl @ 2014
-
+The comparisons of the the many classifiers and the plots are available under each classifier's folder.

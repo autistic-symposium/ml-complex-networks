@@ -1,0 +1,65 @@
+Size: 84
+Order: 627
+Assortativity: -0.246
+Transitivity: 0.181
+Degree: 0.17986
+Coreness: 9.0
+Number_Triangles: 2.0
+Number_Cliques: 80
+Clique_Number: 6
+Clustering: 0.298
+Edge_connectivity: 0
+
+***********************************************
+Eccentricity: 7.0
+Diameter: 10
+Closeness: 0.20057
+Betweeness: 0.00608
+Density: 0.0899311531842
+Radius: 6
+Isolates: []
+Pagerank: 0.0119
+Square_clust: 2.11134
+Communicability: 16.75508
+
+***********************************************
+Ave_Node_conn: 0.55
+Size: 84
+Order: 627
+Assortativity: -0.246
+Transitivity: 0.181
+Degree: 0.17986
+Coreness: 9.0
+Number_Triangles: 2.0
+Number_Cliques: 80
+Clique_Number: 6
+Clustering: 0.298
+Edge_connectivity: 0
+
+***********************************************
+Size: 84
+Order: 627
+Assortativity: -0.246
+Transitivity: 0.181
+Degree: 0.17986
+Coreness: 9.0
+Number_Triangles: 2.0
+Number_Cliques: 80
+Clique_Number: 6
+Clustering: 0.298
+Edge_connectivity: 0
+
+***********************************************
+Size: 84
+Order: 627
+Assortativity: -0.246
+Transitivity: 0.181
+Degree: 0.17986
+Coreness: 9.0
+Number_Triangles: 2.0
+Number_Cliques: 80
+Clique_Number: 6
+Clustering: 0.298
+Edge_connectivity: 0
+
+***********************************************

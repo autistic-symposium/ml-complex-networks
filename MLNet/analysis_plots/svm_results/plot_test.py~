@@ -1,0 +1,49 @@
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+import json
+
+# we create 40 separable points
+trainfile = "./ALL_NO_CV_train.data"
+
+
+datatrain = np.loadtxt(trainfile, delimiter = ',')
+
+
+
+
+fig = plt.figure()
+
+print(datatrain)
+print 'aaa'
+print(datatrain[1])
+
+with open("conf.json") as json_file:
+		s = json.load(json_file)
+ 
+plt.rcParams.update(s)
+plt.plot(datatrain[0], label='N=500', marker='o');
+plt.plot(datatrain[1], label='N=1000',marker='o');
+plt.plot(datatrain[2], label='N=1500', marker='o');
+plt.plot(datatrain[3], label='N=2000',marker='o');
+plt.plot(datatrain[4], label='N=5000',marker='o');
+plt.plot(datatrain[5], label='All together',marker='*');
+
+#plt.title('SVM');
+plt.ylim([0.8,1.05])
+plt.xlim([-0.5, 5.5])
+
+ax = plt.gca()
+ax.xaxis.set_visible(False)
+plt.title('Train Set Results - SVM')
+plt.annotate('"1-vs-the-rest", unormalized', xy=(0,1.01), xytext=(-0.3, 1.03), arrowprops=dict(facecolor='red'), color = 'red', fontsize=9)
+plt.annotate('"1-vs-the-rest", Gauss.', xy=(1,0.96), xytext=(0.98, 0.9), arrowprops=dict(facecolor='black'), fontsize=9)
+plt.annotate('"1-against-1",  xmin ', xy=(2, 0.96), xytext=(2, 0.93), arrowprops=dict(facecolor='black'), fontsize=9)
+plt.annotate('"1-vs-the-rest", Gauss.  ', xy=(3,1.0), xytext=(3.1, 1.03), arrowprops=dict(facecolor='black'), fontsize=9)
+plt.annotate('"1-against-1", xmin', xy=(4,0.955), xytext=(3.9, 0.91), arrowprops=dict(facecolor='black'), fontsize=9)
+plt.annotate('"1-against-1", unormalized', xy=(4.9,0.97), xytext=(4.7, 1.0), arrowprops=dict(facecolor='red'), fontsize=9, color='red')
+
+plt.legend(loc=4,prop={'size':10});
+plt.savefig('train.png')
+

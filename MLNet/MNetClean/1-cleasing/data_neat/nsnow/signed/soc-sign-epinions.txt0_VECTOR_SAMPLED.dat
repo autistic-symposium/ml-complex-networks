@@ -1,0 +1,12 @@
+Size: 50845
+Order: 484489
+Assortativity: -0.113
+Transitivity: 0.073
+Degree: 0.00037
+Coreness: 10.0
+Num_Triangles: 25.0
+Num_Cliques: 218319
+Clique_Number: 63
+Clustering: 0.024
+Edge_conn: 0
+Eccentricity: 4.0
