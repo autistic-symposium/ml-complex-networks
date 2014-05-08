@@ -16,6 +16,8 @@ OUTPUT_TRAIN_G    = OUTPUT_FOLDER + "train_" + str(PERCENTAGE) + "_gauss.data"
 OUTPUT_TEST_G     = OUTPUT_FOLDER + "test_" + str(PERCENTAGE) + "_gauss.data" 
 OUTPUT_TRAIN_M    = OUTPUT_FOLDER + "train_" + str(PERCENTAGE) + "_xmin.data" 
 OUTPUT_TEST_M     = OUTPUT_FOLDER + "test_" + str(PERCENTAGE) + "_xmin.data" 
+OUTPUT_TRAIN_N    = OUTPUT_FOLDER + "train_" + str(PERCENTAGE) + "_none.data" 
+OUTPUT_TEST_N     = OUTPUT_FOLDER + "test_" + str(PERCENTAGE) + "_none.data" 
 
 INPUT_FOLDER     = '../../data/train_test/'
 IN_FILE_TRAIN = INPUT_FOLDER + "train_" + str(PERCENTAGE) + ".data" 

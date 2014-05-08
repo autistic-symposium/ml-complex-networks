@@ -13,7 +13,7 @@ __email__ = "marina.w4hl@gmail.com"
 import  os
 import numpy as np
 from sklearn import preprocessing
-from constants import PERCENTAGE, OUTPUT_FOLDER, IN_FILE_TRAIN,  IN_FILE_TEST, OUTPUT_TRAIN_G, OUTPUT_TEST_G, OUTPUT_TRAIN_M, OUTPUT_TEST_M   
+from constants import PERCENTAGE, OUTPUT_FOLDER, IN_FILE_TRAIN,  IN_FILE_TEST, OUTPUT_TRAIN_G, OUTPUT_TEST_G, OUTPUT_TRAIN_M, OUTPUT_TEST_M,OUTPUT_TRAIN_N, OUTPUT_TEST_N   
 
 
 
@@ -58,11 +58,21 @@ def main():
     output_test_g = OUTPUT_TEST_G
     output_train_m = OUTPUT_TRAIN_M
     output_test_m = OUTPUT_TEST_M
+    output_train_n = OUTPUT_TRAIN_N
+    output_test_n = OUTPUT_TEST_N
 
 
     # open files
     learn_data_X, learn_data_Y = load_data(input_train)
     predict_data_X, predict_data_Y = load_data(input_test)
+
+
+    '''
+       No normlization
+    '''
+    # save results
+    save_results(learn_data_X, learn_data_Y, output_train_n)
+    save_results(predict_data_X, predict_data_Y, output_test_n)
 
 
     '''

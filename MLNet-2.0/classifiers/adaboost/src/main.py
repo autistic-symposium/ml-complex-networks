@@ -27,7 +27,7 @@ def save_result_final(error_train, error_test, output_file, net_name, norm):
     ''' Save in a file the final result '''
 
     with open(output_file, "a") as f:
-        f.write(net_name + ", " + norm + " , " + "etrain: " + str(error_train) + " , etest: " + str(error_test) + "\n")
+        f.write(net_name + ", " + norm + " , " + "atrain: " + str(error_train) + " , atest: " + str(error_test) + "\n")
 
 
 
@@ -36,6 +36,14 @@ def main():
     with decision stump, calculates errors, save final file.
     Since this is a binary classifier, we will do for each of the 
     4 networks, one at time'''
+
+
+    ada_folder = OUTPUT_FOLDER + 'adaboost/'
+    if not os.path.exists(ada_folder):
+        os.makedirs(ada_folder) 
+    output_file = ada_folder + 'results.out'
+    with open(output_file, "w") as f:
+        f.write("# ADABOOST RESULTS, PERCENTAGE: " + str(PERCENTAGE)  + "\n")
 
     # chose classifier
     classifier = AdaBoost(DecisionStump)
@@ -46,12 +54,6 @@ def main():
         input_train = INPUT_FILE + "train_" + str(PERCENTAGE) + '_' + norm + ".data" 
         input_test = INPUT_FILE + "test_" + str(PERCENTAGE) + '_' + norm + ".data"  
 
-        ada_folder = OUTPUT_FOLDER + 'adaboost/'
-        if not os.path.exists(ada_folder):
-            os.makedirs(ada_folder) 
-        output_file = ada_folder + 'results.out'
-        with open(output_file, "a") as f:
-            f.write("# PERCENTAGE: " + str(PERCENTAGE)  + "\n")
 
 
         # for each network type:

@@ -24,7 +24,7 @@ def calculate_error(T, score, Y):
 	       right += 1.0
             else:
                wrong += 1.0
-	final.append(wrong/(right+wrong))
+	final.append(right/(right+wrong))
     
     return final
 
