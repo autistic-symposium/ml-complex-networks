@@ -1,4 +1,0 @@
-#Size Order Assortativity Transitivity Degree Coreness Number_Triangles Number_Cliques Clique_Number Clustering Edge_connectivity Eccentricity Diameter Closeness Betweeness Density Radius Square_clust Communicability Ave_Node_conn Pagerank 
-304,-,0.461,0.356,0.01231,2.0,1.0,292,7,0.223,1,69.0,90,0.03504,-,0.012311099531,-,0.3447,13.90538,1.053,0.00329
-429,-,0.281,0.209,0.00805,1.0,0.0,430,4,0.154,1,103.0,133,0.02265,-,0.00804958281594,-,0.2131,6.38729,1.113,0.00233
-60,-,0.146,0.07,0.05706,1.0,0.0,57,3,0.039,1,27.0,36,0.08176,-,0.0570621468927,-,0.28362,5.21683,1.003,0.01667
