@@ -1,0 +1,10 @@
+# PERCENTAGE: 0.8
+tech, xmin , etrain: 0.0244416796267 , etest: 0.0349565217391
+info, xmin , etrain: 0.0223545878694 , etest: 0.0283105590062
+social, xmin , etrain: 0.0221368584759 , etest: 0.0302857142857
+bio, xmin , etrain: 0.00258786936236 , etest: 0.00407453416149
+# PERCENTAGE: 0.8
+tech, gauss , etrain: 0.0269362363919 , etest: 0.0386708074534
+info, gauss , etrain: 0.0268740279938 , etest: 0.0324472049689
+social, gauss , etrain: 0.0261181959565 , etest: 0.0337763975155
+bio, gauss , etrain: 0.00277138413686 , etest: 0.0043850931677
