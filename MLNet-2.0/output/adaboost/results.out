@@ -1,9 +1,2 @@
-# PERCENTAGE: 0.8
-tech, xmin , atrain: 0.975558320373 , atest: 0.965043478261
-info, xmin , atrain: 0.977645412131 , atest: 0.971689440994
-social, xmin , atrain: 0.977863141524 , atest: 0.969714285714
-bio, xmin , atrain: 0.997412130638 , atest: 0.995925465839
-tech, gauss , atrain: 0.973063763608 , atest: 0.961329192547
-info, gauss , atrain: 0.973125972006 , atest: 0.967552795031
-social, gauss , atrain: 0.973881804044 , atest: 0.966223602484
-bio, gauss , atrain: 0.997228615863 , atest: 0.995614906832
+# ADABOOST RESULTS, PERCENTAGE: 0.8
+tech, xmin , atrain: 0.906114845197 , atest: 0.905554614733

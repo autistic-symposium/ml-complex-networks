@@ -1,4 +1,0 @@
-# RESULTS FOR LOGISTIC REGRESSION, PERCENTAGE: 0.8
-xmin,    atrain: 0.936,   atest: 0.92
-gauss,    atrain: 0.94,   atest: 0.925
-none,    atrain: 0.807,   atest: 0.781

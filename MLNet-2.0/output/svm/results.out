@@ -1,7 +1,7 @@
 # SVM RESULTS, PERCENTAGE: 0.8
-linear xmin,    atrain: 0.937,   atest: 0.92
-SVC xmin,    atrain: 0.801,   atest: 0.771
-linear gauss,    atrain: 0.937,   atest: 0.92
-SVC gauss,    atrain: 0.947,   atest: 0.93
-linear none,    atrain: 0.787,   atest: 0.771
-SVC none,    atrain: 1.0,   atest: 1.0
+linear xmin,    atrain: 0.815,   atest: 0.809
+SVC xmin,    atrain: 0.734,   atest: 0.739
+linear gauss,    atrain: 0.821,   atest: 0.816
+SVC gauss,    atrain: 0.916,   atest: 0.914
+linear none,    atrain: 0.6,   atest: 0.611
+SVC none,    atrain: 0.998,   atest: 0.993
