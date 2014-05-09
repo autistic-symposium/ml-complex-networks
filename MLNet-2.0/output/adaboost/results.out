@@ -1,2 +1,9 @@
 # ADABOOST RESULTS, PERCENTAGE: 0.8
 tech, xmin , atrain: 0.906114845197 , atest: 0.905554614733
+info, xmin , atrain: 0.961694628209 , atest: 0.95816045724
+social, xmin , atrain: 0.932485842816 , atest: 0.924731160034
+bio, xmin , atrain: 0.977130457793 , atest: 0.979229466554
+tech, gauss , atrain: 0.904228631913 , atest: 0.905944115157
+info, gauss , atrain: 0.959289229955 , atest: 0.955270956816
+social, gauss , atrain: 0.930746229161 , atest: 0.925279424217
+bio, gauss , atrain: 0.977036782218 , atest: 0.979362828112

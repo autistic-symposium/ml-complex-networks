@@ -48,3 +48,42 @@ Analysis and Plots
 ------------------
 
 The comparisons of the the many classifiers and the plots are available under each classifier's folder.
+
+
+***** RESULTS ******
+====================
+
+We obtain excellent results for our classifiers:
+
+1) SVM RESULTS, (train/test PERCENTAGE: 0.8)
+--------------------------------------------
+linear xmin,    atrain: 0.815,   atest: 0.809
+SVC xmin,       atrain: 0.734,   atest: 0.739
+linear gauss,   atrain: 0.821,   atest: 0.816
+SVC gauss,      atrain: 0.916,   atest: 0.914
+linear none,    atrain: 0.6,     atest: 0.611
+SVC none,       atrain: 0.998,   atest: 0.993  ---> ALMOST 100% ACCURARY!!!!!
+
+
+2) ADABOOST RESULTS, (train/test PERCENTAGE: 0.8)
+------------------------------------------------
+tech, xmin ,     atrain: 0.906114845197 , atest: 0.905554614733
+info, xmin ,     atrain: 0.961694628209 , atest: 0.95816045724
+social, xmin ,   atrain: 0.932485842816 , atest: 0.924731160034
+bio, xmin ,      atrain: 0.977130457793 , atest: 0.979229466554
+tech, gauss ,    atrain: 0.904228631913 , atest: 0.905944115157
+info, gauss ,    atrain: 0.959289229955 , atest: 0.955270956816
+social, gauss ,  atrain: 0.930746229161 , atest: 0.925279424217
+bio, gauss ,     atrain: 0.977036782218 , atest: 0.979362828112
+
+3) LOGISTIC REGRESSION, (train/test PERCENTAGE: 0.8)
+----------------------------------------------------
+xmin,     atrain: 0.821,   atest: 0.814
+gauss,    atrain: 0.827,   atest: 0.823   ---> 83% ACCURACY
+none,     atrain: 0.745,   atest: 0.748
+
+Feature Pairwise:
+Type   Siz   Ord   Ass   Tra   Deg   Cor   NTr   NCl   Cnu   Clu   Eco   Ecc   Dia   Bet   Den   Rad   Scl   Com   Pag   Cen 
+xmin   0.145 0.545 1.0  0.34  0.845 0.585 0.655 0.0   0.32  1.0   0.0  0.505  0.465 0.715  0.97 0.54  0.45  0.0   1.0   1.0   
+gauss  0.155 0.52  1.0  0.365 0.785 0.605 0.585 0.0   0.415 1.0   0.0  0.51   0.48  0.7    0.96 0.57  0.41  0.0   1.0   1.0   
+none   0.155 0.565 1.0  0.3   0.845 0.55  0.6   0.0   0.48  1.0   0.0  0.5    0.495 0.69   0.97 0.475 0.47  0.0   1.0   1.0   
