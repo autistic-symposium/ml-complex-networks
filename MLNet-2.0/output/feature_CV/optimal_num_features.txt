@@ -1,0 +1,37 @@
+with outlier:
+Starting to plot for xmin
+Optimal number of features : 5
+Optimal number of features : 4
+Optimal number of features : 4
+Optimal number of features : 3
+Optimal number of features : 3
+
+Starting to plot for gauss
+Optimal number of features : 5
+Optimal number of features : 4
+Optimal number of features : 5
+Optimal number of features : 4
+Optimal number of features : 4
+
+
+
+
+without outlier:
+
+Starting to plot for xmin
+Optimal number of features : 5
+Optimal number of features : 2
+Optimal number of features : 4
+Optimal number of features : 3
+Optimal number of features : 4
+
+Starting to plot for gauss
+Optimal number of features : 5
+Optimal number of features : 4
+Optimal number of features : 5
+Optimal number of features : 4
+Optimal number of features : 5
+
+
+
+

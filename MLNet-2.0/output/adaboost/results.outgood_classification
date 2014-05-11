@@ -1,0 +1,246 @@
+
+
+
+Classification
+
+0.01, gauss, 5, T
+
+0.01, gauss, 5, T
+
+0.01, none, 5, T
+
+0.01, none, 5, T
+
+0.01, xmin, 5, T
+
+0.01, xmin, 5, T
+
+0.915, gauss, 2, F
+
+0.917, gauss, 1, F
+
+0.917, none, 1, F
+
+0.917, xmin, 1, F
+
+0.92, gauss, 1, T
+
+0.92, none, 1, T
+
+0.92, xmin, 1, T
+
+0.922, none, 2, F
+
+0.922, xmin, 2, F
+
+0.939, gauss, 3, F
+
+0.94, gauss, 2, T
+
+0.94, none, 2, T
+
+0.94, xmin, 2, T
+
+0.942, none, 3, F
+
+0.942, xmin, 3, F
+
+0.957, gauss, 1, T
+
+0.957, none, 1, T
+
+0.957, xmin, 1, T
+
+0.958, gauss, 1, T
+
+0.958, none, 1, T
+
+0.958, xmin, 1, T
+
+0.96, gauss, 3, F
+
+0.963, gauss, 1, F
+
+0.963, gauss, 2, F
+
+0.963, none, 1, F
+
+0.963, none, 2, F
+
+0.963, none, 3, F
+
+0.963, xmin, 1, F
+
+0.963, xmin, 2, F
+
+0.963, xmin, 3, F
+
+0.966, gauss, 4, F
+
+0.968, gauss, 1, F
+
+0.968, gauss, 4, F
+
+0.968, none, 1, F
+
+0.968, none, 4, F
+
+0.968, xmin, 1, F
+
+0.968, xmin, 4, F
+
+0.97, none, 4, F
+
+0.97, xmin, 4, F
+
+0.98, gauss, 2, T
+
+0.98, none, 2, T
+
+0.98, xmin, 2, T
+
+0.981, gauss, 1, F
+
+0.981, none, 1, F
+
+0.981, xmin, 1, F
+
+0.982, gauss, 5, F
+
+0.983, gauss, 1, T
+
+0.983, none, 1, T
+
+0.983, none, 5, F
+
+0.983, xmin, 1, T
+
+0.983, xmin, 5, F
+
+0.984, gauss, 5, F
+
+0.984, none, 5, F
+
+0.984, xmin, 5, F
+
+0.987, gauss, 2, F
+
+0.987, gauss, 2, T
+
+0.987, none, 2, F
+
+0.987, none, 2, T
+
+0.987, xmin, 2, F
+
+0.987, xmin, 2, T
+
+0.989, gauss, 3, F
+
+0.989, gauss, 5, F
+
+0.99, gauss, 2, F
+
+0.99, none, 2, F
+
+0.99, none, 3, F
+
+0.99, none, 5, F
+
+0.99, xmin, 2, F
+
+0.99, xmin, 3, F
+
+0.99, xmin, 5, F
+
+0.992, gauss, 2, T
+
+0.992, none, 2, T
+
+0.992, xmin, 2, T
+
+0.993, gauss, 3, T
+
+0.993, none, 3, T
+
+0.993, xmin, 3, T
+
+0.994, gauss, 3, T
+
+0.994, none, 3, T
+
+0.994, xmin, 3, T
+
+0.996, gauss, 4, F
+
+0.996, gauss, 4, T
+
+0.996, none, 4, F
+
+0.996, none, 4, T
+
+0.996, xmin, 4, F
+
+0.996, xmin, 4, T
+
+0.998, gauss, 3, F
+
+0.998, gauss, 3, T
+
+0.998, gauss, 4, F
+
+0.998, none, 3, F
+
+0.998, none, 3, T
+
+0.998, none, 4, F
+
+0.998, xmin, 3, F
+
+0.998, xmin, 3, T
+
+0.998, xmin, 4, F
+
+0.999, gauss, 3, T
+
+0.999, gauss, 4, T
+
+0.999, gauss, 5, F
+
+0.999, none, 3, T
+
+0.999, none, 4, T
+
+0.999, none, 5, F
+
+0.999, xmin, 3, T
+
+0.999, xmin, 4, T
+
+0.999, xmin, 5, F
+
+1.0, gauss, 4, T
+
+1.0, gauss, 4, T
+
+1.0, gauss, 5, T
+
+1.0, gauss, 5, T
+
+1.0, none, 4, T
+
+1.0, none, 4, T
+
+1.0, none, 5, T
+
+1.0, none, 5, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 5, T
+
+1.0, xmin, 5, T
+
+

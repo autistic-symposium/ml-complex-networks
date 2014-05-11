@@ -1,0 +1,680 @@
+xmin, 1, T, 1.0, Number_Cliques, 
+xmin, 1, T, 1.0, Clustering, 
+xmin, 1, T, 1.0, Square_clustering, 
+xmin, 1, T, 1.0, Pagerank, 
+xmin, 1, T, 1.0, Centrality, 
+
+xmin, 1, F, 1.0, Number_Cliques, 
+xmin, 1, F, 1.0, Clustering, 
+xmin, 1, F, 1.0, Square_clustering, 
+xmin, 1, F, 1.0, Pagerank, 
+xmin, 1, F, 1.0, Centrality, 
+
+xmin, 2, T, 1.0, Density, 
+xmin, 2, T, 1.0, Square_clustering, 
+xmin, 2, T, 1.0, Communicability, 
+xmin, 2, T, 0.955, Pagerank, 
+
+xmin, 2, F, 0.98, Assortativity, 
+xmin, 2, F, 1.0, Clustering, 
+xmin, 2, F, 1.0, Pagerank, 
+xmin, 2, F, 1.0, Centrality, 
+
+xmin, 3, T, 1.0, Transitivity, 
+xmin, 3, T, 1.0, Number_Triangles, 
+xmin, 3, T, 1.0, Square_clustering, 
+xmin, 3, T, 1.0, Pagerank, 
+
+xmin, 3, F, 0.975, Order, 
+xmin, 3, F, 1.0, Transitivity, 
+xmin, 3, F, 1.0, Clustering, 
+xmin, 3, F, 0.955, Density, 
+xmin, 3, F, 1.0, Square_clustering, 
+xmin, 3, F, 1.0, Pagerank, 
+xmin, 3, F, 1.0, Centrality, 
+
+xmin, 4, T, 1.0, Clique_number, 
+xmin, 4, T, 1.0, Centrality, 
+
+xmin, 4, F, 1.0, Assortativity, 
+xmin, 4, F, 1.0, Clustering, 
+xmin, 4, F, 1.0, Pagerank, 
+xmin, 4, F, 1.0, Centrality, 
+
+xmin, 5, T, 0.955, Coreness, 
+
+xmin, 5, F, 1.0, Order, 
+xmin, 5, F, 1.0, Assortativity, 
+xmin, 5, F, 0.99, Transitivity, 
+xmin, 5, F, 1.0, Clustering, 
+xmin, 5, F, 1.0, Pagerank, 
+xmin, 5, F, 1.0, Centrality, 
+
+gaus, 1, T, 1.0, Number_Cliques, 
+gaus, 1, T, 1.0, Clustering, 
+gaus, 1, T, 1.0, Square_clustering, 
+gaus, 1, T, 1.0, Pagerank, 
+gaus, 1, T, 1.0, Centrality, 
+
+gaus, 1, F, 1.0, Number_Cliques, 
+gaus, 1, F, 1.0, Clustering, 
+gaus, 1, F, 1.0, Square_clustering, 
+gaus, 1, F, 1.0, Pagerank, 
+gaus, 1, F, 1.0, Centrality, 
+
+gaus, 2, T, 1.0, Density, 
+gaus, 2, T, 1.0, Square_clustering, 
+gaus, 2, T, 1.0, Communicability, 
+
+gaus, 2, F, 1.0, Clustering, 
+gaus, 2, F, 0.96, Density, 
+gaus, 2, F, 1.0, Pagerank, 
+gaus, 2, F, 1.0, Centrality, 
+
+gaus, 3, T, 0.995, Transitivity, 
+gaus, 3, T, 1.0, Number_Triangles, 
+gaus, 3, T, 1.0, Square_clustering, 
+gaus, 3, T, 1.0, Pagerank, 
+
+gaus, 3, F, 0.975, Order, 
+gaus, 3, F, 1.0, Transitivity, 
+gaus, 3, F, 1.0, Clustering, 
+gaus, 3, F, 1.0, Square_clustering, 
+gaus, 3, F, 1.0, Pagerank, 
+gaus, 3, F, 1.0, Centrality, 
+
+gaus, 4, T, 0.955, Number_Cliques, 
+gaus, 4, T, 1.0, Clique_number, 
+gaus, 4, T, 1.0, Centrality, 
+
+gaus, 4, F, 1.0, Assortativity, 
+gaus, 4, F, 1.0, Clustering, 
+gaus, 4, F, 1.0, Pagerank, 
+gaus, 4, F, 1.0, Centrality, 
+
+
+gaus, 5, F, 1.0, Order, 
+gaus, 5, F, 1.0, Assortativity, 
+gaus, 5, F, 1.0, Transitivity, 
+gaus, 5, F, 1.0, Clustering, 
+gaus, 5, F, 1.0, Pagerank, 
+gaus, 5, F, 1.0, Centrality, 
+
+none, 1, T, 1.0, Number_Cliques, 
+none, 1, T, 1.0, Clustering, 
+none, 1, T, 1.0, Square_clustering, 
+none, 1, T, 1.0, Pagerank, 
+none, 1, T, 1.0, Centrality, 
+
+none, 1, F, 1.0, Number_Cliques, 
+none, 1, F, 1.0, Clustering, 
+none, 1, F, 1.0, Square_clustering, 
+none, 1, F, 1.0, Pagerank, 
+none, 1, F, 1.0, Centrality, 
+
+none, 2, T, 1.0, Density, 
+none, 2, T, 1.0, Square_clustering, 
+none, 2, T, 1.0, Communicability, 
+none, 2, T, 0.955, Pagerank, 
+
+none, 2, F, 1.0, Clustering, 
+none, 2, F, 1.0, Pagerank, 
+none, 2, F, 1.0, Centrality, 
+
+none, 3, T, 1.0, Transitivity, 
+none, 3, T, 1.0, Number_Triangles, 
+none, 3, T, 1.0, Square_clustering, 
+none, 3, T, 1.0, Pagerank, 
+
+none, 3, F, 0.975, Order, 
+none, 3, F, 1.0, Transitivity, 
+none, 3, F, 1.0, Clustering, 
+none, 3, F, 0.96, Density, 
+none, 3, F, 1.0, Square_clustering, 
+none, 3, F, 1.0, Pagerank, 
+none, 3, F, 1.0, Centrality, 
+
+none, 4, T, 0.985, Clique_number, 
+none, 4, T, 1.0, Centrality, 
+
+none, 4, F, 0.995, Assortativity, 
+none, 4, F, 1.0, Clustering, 
+none, 4, F, 1.0, Pagerank, 
+none, 4, F, 1.0, Centrality, 
+
+
+none, 5, F, 1.0, Order, 
+none, 5, F, 1.0, Assortativity, 
+none, 5, F, 0.995, Transitivity, 
+none, 5, F, 1.0, Clustering, 
+none, 5, F, 1.0, Pagerank, 
+none, 5, F, 1.0, Centrality, 
+
+
+
+
+Classification
+
+0.703, none, 2, F
+
+0.742, none, 3, F
+
+0.746, none, 4, F
+
+0.874, gauss, 2, F
+
+0.877, xmin, 2, F
+
+0.883, gauss, 1, T
+
+0.883, xmin, 1, T
+
+0.885, none, 1, T
+
+0.886, none, 1, F
+
+0.899, gauss, 1, F
+
+0.9, xmin, 1, F
+
+0.903, gauss, 3, F
+
+0.914, gauss, 4, F
+
+0.914, xmin, 2, T
+
+0.914, xmin, 3, F
+
+0.915, none, 2, T
+
+0.915, none, 5, F
+
+0.915, xmin, 4, F
+
+0.923, gauss, 2, T
+
+0.934, gauss, 5, F
+
+0.94, xmin, 5, F
+
+0.995, none, 3, T
+
+0.996, xmin, 3, T
+
+0.998, none, 4, T
+
+0.999, gauss, 3, T
+
+1.0, gauss, 4, T
+
+1.0, gauss, 5, T
+
+1.0, none, 5, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 5, T
+
+
+xmin, 1, T, 1.0, Number_Cliques, 
+xmin, 1, T, 1.0, Clustering, 
+xmin, 1, T, 1.0, Square_clustering, 
+xmin, 1, T, 1.0, Pagerank, 
+xmin, 1, T, 1.0, Centrality, 
+
+xmin, 1, F, 1.0, Number_Cliques, 
+xmin, 1, F, 1.0, Clustering, 
+xmin, 1, F, 1.0, Square_clustering, 
+xmin, 1, F, 1.0, Pagerank, 
+xmin, 1, F, 1.0, Centrality, 
+
+xmin, 2, T, 0.91, Clustering, 
+xmin, 2, T, 1.0, Density, 
+xmin, 2, T, 1.0, Square_clustering, 
+xmin, 2, T, 1.0, Communicability, 
+xmin, 2, T, 0.94, Pagerank, 
+
+xmin, 2, F, 0.975, Assortativity, 
+xmin, 2, F, 1.0, Clustering, 
+xmin, 2, F, 0.965, Density, 
+xmin, 2, F, 1.0, Pagerank, 
+xmin, 2, F, 1.0, Centrality, 
+
+xmin, 3, T, 1.0, Transitivity, 
+xmin, 3, T, 1.0, Number_Triangles, 
+xmin, 3, T, 1.0, Square_clustering, 
+xmin, 3, T, 1.0, Pagerank, 
+
+xmin, 3, F, 1.0, Order, 
+xmin, 3, F, 1.0, Transitivity, 
+xmin, 3, F, 1.0, Clustering, 
+xmin, 3, F, 0.945, Density, 
+xmin, 3, F, 1.0, Square_clustering, 
+xmin, 3, F, 1.0, Pagerank, 
+xmin, 3, F, 1.0, Centrality, 
+
+xmin, 4, T, 0.925, Number_Cliques, 
+xmin, 4, T, 0.985, Clique_number, 
+xmin, 4, T, 1.0, Centrality, 
+
+xmin, 4, F, 1.0, Assortativity, 
+xmin, 4, F, 1.0, Clustering, 
+xmin, 4, F, 1.0, Pagerank, 
+xmin, 4, F, 1.0, Centrality, 
+
+xmin, 5, T, 0.94, Coreness, 
+
+xmin, 5, F, 1.0, Order, 
+xmin, 5, F, 0.99, Assortativity, 
+xmin, 5, F, 1.0, Transitivity, 
+xmin, 5, F, 1.0, Clustering, 
+xmin, 5, F, 0.935, Square_clustering, 
+xmin, 5, F, 1.0, Pagerank, 
+xmin, 5, F, 1.0, Centrality, 
+
+gaus, 1, T, 1.0, Number_Cliques, 
+gaus, 1, T, 1.0, Clustering, 
+gaus, 1, T, 1.0, Square_clustering, 
+gaus, 1, T, 1.0, Pagerank, 
+gaus, 1, T, 1.0, Centrality, 
+
+gaus, 1, F, 1.0, Number_Cliques, 
+gaus, 1, F, 1.0, Clustering, 
+gaus, 1, F, 1.0, Square_clustering, 
+gaus, 1, F, 1.0, Pagerank, 
+gaus, 1, F, 1.0, Centrality, 
+
+gaus, 2, T, 0.935, Clustering, 
+gaus, 2, T, 1.0, Density, 
+gaus, 2, T, 1.0, Square_clustering, 
+gaus, 2, T, 0.995, Communicability, 
+gaus, 2, T, 0.965, Pagerank, 
+
+gaus, 2, F, 0.96, Assortativity, 
+gaus, 2, F, 1.0, Clustering, 
+gaus, 2, F, 0.945, Density, 
+gaus, 2, F, 1.0, Pagerank, 
+gaus, 2, F, 1.0, Centrality, 
+
+gaus, 3, T, 1.0, Transitivity, 
+gaus, 3, T, 1.0, Number_Triangles, 
+gaus, 3, T, 1.0, Square_clustering, 
+gaus, 3, T, 1.0, Pagerank, 
+
+gaus, 3, F, 0.99, Order, 
+gaus, 3, F, 1.0, Transitivity, 
+gaus, 3, F, 1.0, Clustering, 
+gaus, 3, F, 0.965, Density, 
+gaus, 3, F, 1.0, Square_clustering, 
+gaus, 3, F, 1.0, Pagerank, 
+gaus, 3, F, 1.0, Centrality, 
+
+gaus, 4, T, 0.955, Number_Cliques, 
+gaus, 4, T, 1.0, Clique_number, 
+gaus, 4, T, 1.0, Centrality, 
+
+gaus, 4, F, 0.995, Assortativity, 
+gaus, 4, F, 1.0, Clustering, 
+gaus, 4, F, 1.0, Pagerank, 
+gaus, 4, F, 1.0, Centrality, 
+
+
+gaus, 5, F, 1.0, Order, 
+gaus, 5, F, 1.0, Assortativity, 
+gaus, 5, F, 0.98, Transitivity, 
+gaus, 5, F, 1.0, Clustering, 
+gaus, 5, F, 0.915, Square_clustering, 
+gaus, 5, F, 1.0, Pagerank, 
+gaus, 5, F, 1.0, Centrality, 
+
+none, 1, T, 1.0, Number_Cliques, 
+none, 1, T, 1.0, Clustering, 
+none, 1, T, 1.0, Square_clustering, 
+none, 1, T, 1.0, Pagerank, 
+none, 1, T, 1.0, Centrality, 
+
+none, 1, F, 1.0, Number_Cliques, 
+none, 1, F, 1.0, Clustering, 
+none, 1, F, 1.0, Square_clustering, 
+none, 1, F, 1.0, Pagerank, 
+none, 1, F, 1.0, Centrality, 
+
+none, 2, T, 1.0, Density, 
+none, 2, T, 1.0, Square_clustering, 
+none, 2, T, 1.0, Communicability, 
+none, 2, T, 0.94, Pagerank, 
+
+none, 2, F, 0.945, Assortativity, 
+none, 2, F, 1.0, Clustering, 
+none, 2, F, 0.955, Density, 
+none, 2, F, 1.0, Pagerank, 
+none, 2, F, 1.0, Centrality, 
+
+none, 3, T, 1.0, Transitivity, 
+none, 3, T, 1.0, Number_Triangles, 
+none, 3, T, 1.0, Square_clustering, 
+none, 3, T, 1.0, Pagerank, 
+
+none, 3, F, 0.965, Order, 
+none, 3, F, 1.0, Transitivity, 
+none, 3, F, 1.0, Clustering, 
+none, 3, F, 0.97, Density, 
+none, 3, F, 1.0, Square_clustering, 
+none, 3, F, 1.0, Pagerank, 
+none, 3, F, 1.0, Centrality, 
+
+none, 4, T, 0.945, Number_Cliques, 
+none, 4, T, 0.995, Clique_number, 
+none, 4, T, 1.0, Centrality, 
+
+none, 4, F, 1.0, Assortativity, 
+none, 4, F, 1.0, Clustering, 
+none, 4, F, 1.0, Pagerank, 
+none, 4, F, 1.0, Centrality, 
+
+none, 5, T, 0.94, Coreness, 
+
+none, 5, F, 1.0, Order, 
+none, 5, F, 1.0, Assortativity, 
+none, 5, F, 1.0, Transitivity, 
+none, 5, F, 1.0, Clustering, 
+none, 5, F, 0.925, Square_clustering, 
+none, 5, F, 1.0, Pagerank, 
+none, 5, F, 1.0, Centrality, 
+
+
+
+
+Classification
+
+0.719, none, 2, F
+
+0.776, none, 3, F
+
+0.842, none, 4, F
+
+0.874, gauss, 2, F
+
+0.877, xmin, 2, F
+
+0.883, gauss, 1, T
+
+0.883, xmin, 1, T
+
+0.885, none, 1, T
+
+0.886, none, 1, F
+
+0.9, xmin, 1, F
+
+0.901, gauss, 1, F
+
+0.912, none, 5, F
+
+0.913, gauss, 3, F
+
+0.913, xmin, 3, F
+
+0.914, gauss, 4, F
+
+0.914, xmin, 2, T
+
+0.915, none, 2, T
+
+0.915, xmin, 4, F
+
+0.923, gauss, 2, T
+
+0.94, gauss, 5, F
+
+0.94, xmin, 5, F
+
+0.995, none, 3, T
+
+0.996, xmin, 3, T
+
+0.998, none, 4, T
+
+0.999, gauss, 3, T
+
+1.0, gauss, 4, T
+
+1.0, gauss, 5, T
+
+1.0, none, 5, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 5, T
+
+
+xmin, 1, T, 1.0, Number_Cliques, 
+xmin, 1, T, 1.0, Clustering, 
+xmin, 1, T, 1.0, Square_clustering, 
+xmin, 1, T, 1.0, Pagerank, 
+xmin, 1, T, 1.0, Centrality, 
+
+xmin, 1, F, 1.0, Number_Cliques, 
+xmin, 1, F, 1.0, Clustering, 
+xmin, 1, F, 1.0, Square_clustering, 
+xmin, 1, F, 1.0, Pagerank, 
+xmin, 1, F, 1.0, Centrality, 
+
+xmin, 2, T, 0.91, Clustering, 
+xmin, 2, T, 1.0, Density, 
+xmin, 2, T, 1.0, Square_clustering, 
+xmin, 2, T, 1.0, Communicability, 
+xmin, 2, T, 0.915, Pagerank, 
+
+xmin, 2, F, 0.98, Assortativity, 
+xmin, 2, F, 1.0, Clustering, 
+xmin, 2, F, 1.0, Pagerank, 
+xmin, 2, F, 1.0, Centrality, 
+
+xmin, 3, T, 1.0, Transitivity, 
+xmin, 3, T, 1.0, Number_Triangles, 
+xmin, 3, T, 1.0, Square_clustering, 
+xmin, 3, T, 1.0, Pagerank, 
+
+xmin, 3, F, 0.955, Order, 
+xmin, 3, F, 1.0, Transitivity, 
+xmin, 3, F, 1.0, Clustering, 
+xmin, 3, F, 0.925, Density, 
+xmin, 3, F, 1.0, Square_clustering, 
+xmin, 3, F, 1.0, Pagerank, 
+xmin, 3, F, 1.0, Centrality, 
+
+xmin, 4, T, 1.0, Clique_number, 
+xmin, 4, T, 1.0, Centrality, 
+
+xmin, 4, F, 1.0, Assortativity, 
+xmin, 4, F, 1.0, Clustering, 
+xmin, 4, F, 1.0, Pagerank, 
+xmin, 4, F, 1.0, Centrality, 
+
+xmin, 5, T, 0.905, Coreness, 
+xmin, 5, T, 0.975, Centrality, 
+
+xmin, 5, F, 1.0, Order, 
+xmin, 5, F, 0.99, Assortativity, 
+xmin, 5, F, 0.985, Transitivity, 
+xmin, 5, F, 1.0, Clustering, 
+xmin, 5, F, 1.0, Pagerank, 
+xmin, 5, F, 1.0, Centrality, 
+
+gaus, 1, T, 1.0, Number_Cliques, 
+gaus, 1, T, 1.0, Clustering, 
+gaus, 1, T, 1.0, Square_clustering, 
+gaus, 1, T, 1.0, Pagerank, 
+gaus, 1, T, 1.0, Centrality, 
+
+gaus, 1, F, 1.0, Number_Cliques, 
+gaus, 1, F, 1.0, Clustering, 
+gaus, 1, F, 1.0, Square_clustering, 
+gaus, 1, F, 1.0, Pagerank, 
+gaus, 1, F, 1.0, Centrality, 
+
+gaus, 2, T, 0.915, Clustering, 
+gaus, 2, T, 1.0, Density, 
+gaus, 2, T, 1.0, Square_clustering, 
+gaus, 2, T, 1.0, Communicability, 
+gaus, 2, T, 0.94, Pagerank, 
+
+gaus, 2, F, 0.995, Assortativity, 
+gaus, 2, F, 1.0, Clustering, 
+gaus, 2, F, 0.925, Density, 
+gaus, 2, F, 1.0, Pagerank, 
+gaus, 2, F, 1.0, Centrality, 
+
+gaus, 3, T, 0.99, Transitivity, 
+gaus, 3, T, 1.0, Number_Triangles, 
+gaus, 3, T, 1.0, Square_clustering, 
+gaus, 3, T, 1.0, Pagerank, 
+
+gaus, 3, F, 0.97, Order, 
+gaus, 3, F, 1.0, Transitivity, 
+gaus, 3, F, 1.0, Clustering, 
+gaus, 3, F, 0.925, Density, 
+gaus, 3, F, 1.0, Square_clustering, 
+gaus, 3, F, 1.0, Pagerank, 
+gaus, 3, F, 1.0, Centrality, 
+
+gaus, 4, T, 0.915, Number_Cliques, 
+gaus, 4, T, 1.0, Clique_number, 
+gaus, 4, T, 1.0, Centrality, 
+
+gaus, 4, F, 1.0, Assortativity, 
+gaus, 4, F, 1.0, Clustering, 
+gaus, 4, F, 1.0, Pagerank, 
+gaus, 4, F, 1.0, Centrality, 
+
+gaus, 5, T, 0.925, Coreness, 
+gaus, 5, T, 0.975, Centrality, 
+
+gaus, 5, F, 1.0, Order, 
+gaus, 5, F, 0.98, Assortativity, 
+gaus, 5, F, 0.985, Transitivity, 
+gaus, 5, F, 1.0, Clustering, 
+gaus, 5, F, 1.0, Pagerank, 
+gaus, 5, F, 1.0, Centrality, 
+
+none, 1, T, 1.0, Number_Cliques, 
+none, 1, T, 1.0, Clustering, 
+none, 1, T, 1.0, Square_clustering, 
+none, 1, T, 1.0, Pagerank, 
+none, 1, T, 1.0, Centrality, 
+
+none, 1, F, 1.0, Number_Cliques, 
+none, 1, F, 1.0, Clustering, 
+none, 1, F, 1.0, Square_clustering, 
+none, 1, F, 1.0, Pagerank, 
+none, 1, F, 1.0, Centrality, 
+
+none, 2, T, 0.935, Clustering, 
+none, 2, T, 1.0, Density, 
+none, 2, T, 1.0, Square_clustering, 
+none, 2, T, 1.0, Communicability, 
+
+none, 2, F, 0.99, Assortativity, 
+none, 2, F, 1.0, Clustering, 
+none, 2, F, 0.92, Density, 
+none, 2, F, 1.0, Pagerank, 
+none, 2, F, 1.0, Centrality, 
+
+none, 3, T, 0.995, Transitivity, 
+none, 3, T, 1.0, Number_Triangles, 
+none, 3, T, 1.0, Square_clustering, 
+none, 3, T, 1.0, Pagerank, 
+
+none, 3, F, 0.96, Order, 
+none, 3, F, 1.0, Transitivity, 
+none, 3, F, 1.0, Clustering, 
+none, 3, F, 0.925, Density, 
+none, 3, F, 1.0, Square_clustering, 
+none, 3, F, 1.0, Pagerank, 
+none, 3, F, 1.0, Centrality, 
+
+none, 4, T, 1.0, Clique_number, 
+none, 4, T, 1.0, Centrality, 
+
+none, 4, F, 1.0, Assortativity, 
+none, 4, F, 1.0, Clustering, 
+none, 4, F, 1.0, Pagerank, 
+none, 4, F, 1.0, Centrality, 
+
+none, 5, T, 0.92, Coreness, 
+none, 5, T, 0.96, Centrality, 
+
+none, 5, F, 1.0, Order, 
+none, 5, F, 0.98, Assortativity, 
+none, 5, F, 0.96, Transitivity, 
+none, 5, F, 1.0, Clustering, 
+none, 5, F, 1.0, Pagerank, 
+none, 5, F, 1.0, Centrality, 
+
+
+
+
+Classification
+
+0.713, none, 2, F
+
+0.739, none, 4, F
+
+0.843, gauss, 2, F
+
+0.849, xmin, 2, F
+
+0.854, none, 3, F
+
+0.885, gauss, 1, T
+
+0.885, none, 1, T
+
+0.885, xmin, 1, T
+
+0.891, none, 1, F
+
+0.898, gauss, 1, F
+
+0.901, gauss, 3, F
+
+0.904, xmin, 1, F
+
+0.912, none, 2, T
+
+0.916, xmin, 3, F
+
+0.92, none, 5, F
+
+0.93, gauss, 4, F
+
+0.931, gauss, 2, T
+
+0.931, xmin, 2, T
+
+0.933, xmin, 4, F
+
+0.941, xmin, 5, F
+
+0.944, gauss, 5, F
+
+0.989, none, 3, T
+
+0.997, xmin, 3, T
+
+0.999, gauss, 3, T
+
+1.0, gauss, 4, T
+
+1.0, gauss, 5, T
+
+1.0, none, 4, T
+
+1.0, none, 5, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 5, T
+
+

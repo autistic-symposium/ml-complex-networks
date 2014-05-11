@@ -1,4 +1,32 @@
-# RESULTS FOR LOGISTIC REGRESSION, PERCENTAGE: 0.8
-xmin,    atrain: 0.821,   atest: 0.814
-gauss,    atrain: 0.827,   atest: 0.823
-none,    atrain: 0.745,   atest: 0.748
+# LOG REG RESULTS, TRAIN/TEST FRACTION: 0.8
+# Normalization - Set Number - Include Outliers? - Accu. Train - Accu Test
+xmin         -  1      -     True        -        0.894     -   0.885
+xmin         -  1      -     False        -        0.895     -   0.904
+xmin         -  2      -     True        -        0.926     -   0.931
+xmin         -  2      -     False        -        0.854     -   0.849
+xmin         -  3      -     True        -        0.996     -   0.997
+xmin         -  3      -     False        -        0.918     -   0.916
+xmin         -  4      -     True        -        1.0     -   1.0
+xmin         -  4      -     False        -        0.918     -   0.933
+xmin         -  5      -     True        -        1.0     -   1.0
+xmin         -  5      -     False        -        0.939     -   0.941
+gaus         -  1      -     True        -        0.893     -   0.885
+gaus         -  1      -     False        -        0.89     -   0.898
+gaus         -  2      -     True        -        0.926     -   0.931
+gaus         -  2      -     False        -        0.85     -   0.843
+gaus         -  3      -     True        -        0.998     -   0.999
+gaus         -  3      -     False        -        0.9     -   0.901
+gaus         -  4      -     True        -        1.0     -   1.0
+gaus         -  4      -     False        -        0.918     -   0.93
+gaus         -  5      -     True        -        1.0     -   1.0
+gaus         -  5      -     False        -        0.938     -   0.944
+none         -  1      -     True        -        0.893     -   0.885
+none         -  1      -     False        -        0.868     -   0.891
+none         -  2      -     True        -        0.914     -   0.912
+none         -  2      -     False        -        0.711     -   0.713
+none         -  3      -     True        -        0.99     -   0.989
+none         -  3      -     False        -        0.861     -   0.854
+none         -  4      -     True        -        1.0     -   1.0
+none         -  4      -     False        -        0.731     -   0.739
+none         -  5      -     True        -        1.0     -   1.0
+none         -  5      -     False        -        0.913     -   0.92

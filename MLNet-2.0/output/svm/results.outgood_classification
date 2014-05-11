@@ -1,0 +1,96 @@
+
+
+
+Classification
+
+0.538, linear none, 2, F
+
+0.543, linear none, 3, F
+
+0.57, linear none, 4, F
+
+0.605, linear none, 5, F
+
+0.681, linear none, 1, F
+
+0.729, SVC xmin, 2, F
+
+0.759, SVC xmin, 3, F
+
+0.766, linear none, 2, T
+
+0.811, SVC xmin, 1, F
+
+0.821, SVC xmin, 4, F
+
+0.824, linear none, 1, T
+
+0.841, linear xmin, 2, F
+
+0.845, linear gauss, 2, F
+
+0.877, SVC xmin, 5, F
+
+0.879, SVC gauss, 2, F
+
+0.88, linear gauss, 1, T
+
+0.88, linear xmin, 1, T
+
+0.896, linear xmin, 1, F
+
+0.897, linear xmin, 3, F
+
+0.899, linear gauss, 1, F
+
+0.901, linear gauss, 3, F
+
+0.909, linear gauss, 2, T
+
+0.909, linear xmin, 2, T
+
+0.928, linear xmin, 4, F
+
+0.929, linear gauss, 4, F
+
+0.929, linear xmin, 5, F
+
+0.931, SVC gauss, 3, F
+
+0.931, linear gauss, 5, F
+
+0.935, SVC gauss, 1, F
+
+0.944, linear none, 3, T
+
+0.946, SVC gauss, 4, F
+
+0.967, linear none, 4, T
+
+0.974, SVC gauss, 5, F
+
+0.981, SVC none, 1, F
+
+0.987, linear gauss, 3, T
+
+0.987, linear xmin, 3, T
+
+1.0, SVC none, 2, F
+
+1.0, SVC none, 3, F
+
+1.0, SVC none, 4, F
+
+1.0, SVC none, 5, F
+
+1.0, linear gauss, 4, T
+
+1.0, linear gauss, 5, T
+
+1.0, linear none, 5, T
+
+1.0, linear xmin, 4, T
+
+1.0, linear xmin, 5, T
+
+

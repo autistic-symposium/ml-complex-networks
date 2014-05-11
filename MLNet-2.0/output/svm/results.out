@@ -1,7 +1,62 @@
-# SVM RESULTS, PERCENTAGE: 0.8
-linear xmin,    atrain: 0.815,   atest: 0.809
-SVC xmin,    atrain: 0.734,   atest: 0.739
-linear gauss,    atrain: 0.821,   atest: 0.816
-SVC gauss,    atrain: 0.916,   atest: 0.914
-linear none,    atrain: 0.6,   atest: 0.611
-SVC none,    atrain: 0.998,   atest: 0.993
+# SVM RESULTS, TRAIN/TEST FRACTION: 0.8
+# Normalization - Set Number - Outliers?      Accu. Train   Accu Test
+linear xmi           1           T                0.889        0.88
+   SVC xmi           1           T                0.807        0.798
+linear xmi           1           F                0.886        0.896
+   SVC xmi           1           F                0.787        0.811
+linear xmi           2           T                0.907        0.909
+   SVC xmi           2           T                0.806        0.79
+linear xmi           2           F                0.846        0.841
+   SVC xmi           2           F                0.726        0.729
+linear xmi           3           T                0.987        0.987
+   SVC xmi           3           T                0.953        0.956
+linear xmi           3           F                0.898        0.897
+   SVC xmi           3           F                0.772        0.759
+linear xmi           4           T                1.0        1.0
+   SVC xmi           4           T                0.983        0.979
+linear xmi           4           F                0.911        0.928
+   SVC xmi           4           F                0.806        0.821
+linear xmi           5           T                1.0        1.0
+   SVC xmi           5           T                0.999        0.997
+linear xmi           5           F                0.922        0.929
+   SVC xmi           5           F                0.875        0.877
+linear gau           1           T                0.889        0.88
+   SVC gau           1           T                0.924        0.919
+linear gau           1           F                0.888        0.899
+   SVC gau           1           F                0.922        0.935
+linear gau           2           T                0.907        0.909
+   SVC gau           2           T                0.936        0.934
+linear gau           2           F                0.848        0.845
+   SVC gau           2           F                0.876        0.879
+linear gau           3           T                0.987        0.987
+   SVC gau           3           T                0.985        0.985
+linear gau           3           F                0.9        0.901
+   SVC gau           3           F                0.931        0.931
+linear gau           4           T                1.0        1.0
+   SVC gau           4           T                0.999        0.999
+linear gau           4           F                0.914        0.929
+   SVC gau           4           F                0.939        0.946
+linear gau           5           T                1.0        1.0
+   SVC gau           5           T                1.0        1.0
+linear gau           5           F                0.924        0.931
+   SVC gau           5           F                0.974        0.974
+linear non           1           T                0.839        0.824
+   SVC non           1           T                0.984        0.986
+linear non           1           F                0.667        0.681
+   SVC non           1           F                0.986        0.981
+linear non           2           T                0.767        0.766
+   SVC non           2           T                1.0        1.0
+linear non           2           F                0.55        0.538
+   SVC non           2           F                0.999        1.0
+linear non           3           T                0.942        0.944
+   SVC non           3           T                1.0        1.0
+linear non           3           F                0.572        0.543
+   SVC non           3           F                1.0        1.0
+linear non           4           T                0.965        0.967
+   SVC non           4           T                1.0        1.0
+linear non           4           F                0.577        0.57
+   SVC non           4           F                1.0        1.0
+linear non           5           T                1.0        1.0
+   SVC non           5           T                1.0        1.0
+linear non           5           F                0.597        0.605
+   SVC non           5           F                1.0        1.0
