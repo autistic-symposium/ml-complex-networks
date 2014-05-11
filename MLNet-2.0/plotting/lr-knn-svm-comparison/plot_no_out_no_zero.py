@@ -78,8 +78,9 @@ def plotting(X, Y, Xt, Yt, labelx, labely, outputfile):
     h = .02  # step size in the mesh
     classifiers = dict(
     knn=neighbors.KNeighborsClassifier(4),
-    logistic=linear_model.LogisticRegression(C=1e5),
-    svm=svm.SVC(C=1e5),
+    logistic=linear_model.LogisticRegression(C=1e4, penalty=l1),
+    svm=svm.SVC(C=1e4),
+    svmlinear=svm.LinearSVC(C=1e4),
     adaboost=ensemble.AdaBoostClassifier(),
     naivebay=naive_bayes.GaussianNB())
 
