@@ -2,7 +2,7 @@
 
 
 
-cd ./kmeans/
+cd ./clustering/
 python plot.py
 
 cd ../..

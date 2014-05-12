@@ -133,7 +133,7 @@ def plotting_aff(X,  Y, labelx, labely, labelz, outputfile):
 
     pl.figure(1)    
     pl.clf()
-    
+    pl.cla()
     colors = cycle('bgrcmykbgrcmykbgrcmykbgrcmyk')    
     for k, col in zip(range(n_clusters_), colors):
         my_members = labels == k
@@ -146,7 +146,7 @@ def plotting_aff(X,  Y, labelx, labely, labelz, outputfile):
 
 def plotting_aff_dbscan(X,  labels_true, outputfile):
     X = StandardScaler().fit_transform(X)
-    db = DBSCAN(eps=0.3, min_samples=10).fit(X)    
+    db = DBSCAN(eps=0.5, min_samples=70).fit(X)    
     core_samples = db.core_sample_indices_    
     labels = db.labels_
 
@@ -160,6 +160,8 @@ def plotting_aff_dbscan(X,  labels_true, outputfile):
     print("Adjusted Mutual Information: %0.3f" % metrics.adjusted_mutual_info_score(labels_true, labels)) 
     print("Silhouette Coefficient: %0.3f" % metrics.silhouette_score(X, labels))
 
+    pl.clf()
+    pl.cla()
     unique_labels = set(labels)
     colors = pl.cm.Spectral(np.linspace(0, 1, len(unique_labels)))
     for k, col in zip(unique_labels, colors):

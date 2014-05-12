@@ -1,0 +1,117 @@
+... Starting set 1 for norm xmin
+Features: Number_Cliques_Clustering_Pagerank
+number of estimated clusters : 6
+Features: Number_Cliques_Clustering_Centrality
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Square_clustering
+number of estimated clusters : 7
+Features: Number_Cliques_Clustering_Assortativity
+number of estimated clusters : 8
+Features: Number_Cliques_Clustering_Transitivity
+number of estimated clusters : 13
+
+Starting affinity all ...
+number of estimated clusters : 2
+
+Starting dbsc scan ...
+Estimated number of clusters: 11
+Homogeneity: 0.184
+Completeness: 0.158
+V-measure: 0.170
+Adjusted Rand Index: -0.120
+Adjusted Mutual Information: 0.156
+Silhouette Coefficient: -0.214
+... Starting set 2 for norm xmin
+Features: Number_Cliques_Clustering_Pagerank
+number of estimated clusters : 6
+Features: Number_Cliques_Clustering_Centrality
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Square_clustering
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Assortativity
+number of estimated clusters : 4
+Features: Number_Cliques_Clustering_Transitivity
+number of estimated clusters : 5
+
+Starting affinity all ...
+number of estimated clusters : 4
+
+Starting dbsc scan ...
+Estimated number of clusters: 7
+Homogeneity: 0.110
+Completeness: 0.128
+V-measure: 0.118
+Adjusted Rand Index: -0.131
+Adjusted Mutual Information: 0.107
+Silhouette Coefficient: -0.216
+... Starting set 3 for norm xmin
+Features: Number_Cliques_Clustering_Pagerank
+number of estimated clusters : 7
+Features: Number_Cliques_Clustering_Centrality
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Square_clustering
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Assortativity
+number of estimated clusters : 4
+Features: Number_Cliques_Clustering_Transitivity
+number of estimated clusters : 7
+
+Starting affinity all ...
+number of estimated clusters : 4
+
+Starting dbsc scan ...
+Estimated number of clusters: 4
+Homogeneity: 0.133
+Completeness: 0.149
+V-measure: 0.140
+Adjusted Rand Index: -0.121
+Adjusted Mutual Information: 0.131
+Silhouette Coefficient: -0.218
+... Starting set 4 for norm xmin
+Features: Number_Cliques_Clustering_Pagerank
+number of estimated clusters : 3
+Features: Number_Cliques_Clustering_Centrality
+number of estimated clusters : 4
+Features: Number_Cliques_Clustering_Square_clustering
+number of estimated clusters : 5
+Features: Number_Cliques_Clustering_Assortativity
+number of estimated clusters : 2
+Features: Number_Cliques_Clustering_Transitivity
+number of estimated clusters : 5
+
+Starting affinity all ...
+number of estimated clusters : 4
+
+Starting dbsc scan ...
+Estimated number of clusters: 7
+Homogeneity: 0.263
+Completeness: 0.183
+V-measure: 0.216
+Adjusted Rand Index: 0.032
+Adjusted Mutual Information: 0.181
+Silhouette Coefficient: -0.142
+... Starting set 5 for norm xmin
+Features: Number_Cliques_Clustering_Pagerank
+number of estimated clusters : 2
+Features: Number_Cliques_Clustering_Centrality
+number of estimated clusters : 4
+Features: Number_Cliques_Clustering_Square_clustering
+number of estimated clusters : 5
+Features: Number_Cliques_Clustering_Assortativity
+number of estimated clusters : 2
+Features: Number_Cliques_Clustering_Transitivity
+number of estimated clusters : 4
+
+Starting affinity all ...
+number of estimated clusters : 2
+
+Starting dbsc scan ...
+Estimated number of clusters: 5
+Homogeneity: 0.224
+Completeness: 0.124
+V-measure: 0.160
+Adjusted Rand Index: 0.069
+Adjusted Mutual Information: 0.122
+Silhouette Coefficient: -0.192
+Done!
+

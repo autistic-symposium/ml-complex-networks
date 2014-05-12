@@ -74,8 +74,8 @@ def main():
             rfecv.fit(X, Y)
             print("Optimal number of features : %d" % rfecv.n_features_)
 
-            plt.ylim(0, 2)
-            plt.xlim(1, 7)
+            plt.ylim(0, 3)
+            plt.xlim(1, 5.5)
             plt.xlabel("Number of features selected")
             plt.ylabel("Cross validation score (nb of misclassifications)")
             plt.plot(range(1, len(rfecv.grid_scores_) + 1), rfecv.grid_scores_, c=color[number-1], label="Set " +str(number))
