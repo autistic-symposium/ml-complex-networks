@@ -10,7 +10,7 @@ __version__ = "2.0"
 __maintainer__ = "Mari Wahl"
 __email__ = "marina.w4hl@gmail.com"
 
-''' This program shows the application svm  '''
+''' This program shows the application svm to classify our complex networks '''
 
 
 import os

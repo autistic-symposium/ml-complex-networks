@@ -10,7 +10,7 @@ __version__ = "2.0"
 __maintainer__ = "Mari Wahl"
 __email__ = "marina.w4hl@gmail.com"
 
-''' This program shows the application svm  '''
+''' This performs logistic regression to our networks '''
 
 
 import os
@@ -124,7 +124,7 @@ def main():
             X_test, Y_test = load_data(input_test)
 
 
-            print 'Calculating logistic regression for with  normalization ' + norm + ' and set ' + str(number)
+            print 'Calculating logistic regression for data with normalization ' + norm + ' and set ' + str(number)
 
              # classifier 
             model = fit_model(X_train, Y_train)
