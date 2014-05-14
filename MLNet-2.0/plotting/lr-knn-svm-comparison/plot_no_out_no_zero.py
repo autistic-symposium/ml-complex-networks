@@ -2,11 +2,6 @@
  
  
 __author__ = "Mari Wahl"
-__copyright__ = "Copyright 2014"
-__credits__ = ["Mari Wahl"]
-__license__ = "GPL"
-__version__ = "2.0"
-__maintainer__ = "Mari Wahl"
 __email__ = "marina.w4hl@gmail.com"
 
 
@@ -19,11 +14,12 @@ import json
 from constants import FEATURES, INPUT_FOLDER, OUTPUT_FOLDER, TYPE_NOR, FEATURES_WE_WANT,FEATURES_INDEX
 from matplotlib.colors import ListedColormap
 
-''' Show below is a logistic-regression classifiers decision boundaries on the iris dataset. The datapoints are colored according to their labels.''' 
+
 
 def get_input_path(number, typen):
     return INPUT_FOLDER + 'together' + str(number) + '_train_0.8_' + typen + '.data',INPUT_FOLDER + 'together' \
     + str(number) + '_test_0.8_' + typen +'.data'
+
 
 
 
@@ -36,12 +32,16 @@ def get_output_path(typen, number, feat):
 
     return outfolder + 'set' + number + feat + '_0.8_' + typen 
 
+
+
+
 def get_output_path_score():
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
     outfolder = OUTPUT_FOLDER +  'plots-svm-lr-knn_no_out_no_zero/'
     if not os.path.exists(outfolder):
-        os.makedirs(outfolder)    
+        os.makedirs(outfolder)  
+
     return outfolder +'SCORE.txt'
 
 
@@ -60,8 +60,6 @@ def get_data_here(inputfile, inputfilet, indexx, indexy ):
             Y.append(clas[i])
     X = np.array(X)
 
-
-
     data = np.loadtxt(inputfilet, delimiter = ',')
     feat1 = data[:, indexx]
     feat2 = data[:, indexy]
@@ -70,9 +68,12 @@ def get_data_here(inputfile, inputfilet, indexx, indexy ):
         Xt.append([f1, feat2[i]])
     Xt = np.array(Xt)
     Yt = data[:,-1]
+
     return X, Y, Xt, Yt
 
  
+
+
 
 def plotting(X, Y, Xt, Yt, labelx, labely, outputfile):
     h = .02  # step size in the mesh
@@ -97,6 +98,7 @@ def plotting(X, Y, Xt, Yt, labelx, labely, outputfile):
             print '....... plotting for ' + name 
             pl.cla()
             pl.clf()
+
             # Plot the decision boundary. For that, we will assign a color to each
             # point in the mesh [x_min, m_max]x[y_min, y_max].
             x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
@@ -169,7 +171,9 @@ def main():
                         X, Y, Xt, Yt = get_data_here(inputfile, inputfilet, indexx, indexy )
                         
                         score, lab = plotting(X, Y, Xt, Yt, labelx, labely, outputfile)
-                        score_array.append(lab + ', ' + str(number) + ', ' + typen + ', '  + axisx + ' vs. ' + axisy + ': ' + str(score) + "\n")
+                        score_array.append(lab + ', ' + str(number) + ', ' + typen + ', '  + axisx + ' vs. ' + axisy + \
+                        	': ' + str(score) + "\n")
+
 
 
     with open(output_file_score , "a") as f:

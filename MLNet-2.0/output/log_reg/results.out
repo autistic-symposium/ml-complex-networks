@@ -1,32 +1,65 @@
-# LOG REG RESULTS, TRAIN/TEST FRACTION: 0.8
-# Normalization - Set Number - Include Outliers? - Accu. Train - Accu Test
-xmin         -  1      -     True        -        0.894     -   0.885
-xmin         -  1      -     False        -        0.895     -   0.904
-xmin         -  2      -     True        -        0.926     -   0.931
-xmin         -  2      -     False        -        0.854     -   0.849
-xmin         -  3      -     True        -        0.996     -   0.997
-xmin         -  3      -     False        -        0.918     -   0.916
-xmin         -  4      -     True        -        1.0     -   1.0
-xmin         -  4      -     False        -        0.918     -   0.933
-xmin         -  5      -     True        -        1.0     -   1.0
-xmin         -  5      -     False        -        0.939     -   0.941
-gaus         -  1      -     True        -        0.893     -   0.885
-gaus         -  1      -     False        -        0.89     -   0.898
-gaus         -  2      -     True        -        0.926     -   0.931
-gaus         -  2      -     False        -        0.85     -   0.843
-gaus         -  3      -     True        -        0.998     -   0.999
-gaus         -  3      -     False        -        0.9     -   0.901
-gaus         -  4      -     True        -        1.0     -   1.0
-gaus         -  4      -     False        -        0.918     -   0.93
-gaus         -  5      -     True        -        1.0     -   1.0
-gaus         -  5      -     False        -        0.938     -   0.944
-none         -  1      -     True        -        0.893     -   0.885
-none         -  1      -     False        -        0.868     -   0.891
-none         -  2      -     True        -        0.914     -   0.912
-none         -  2      -     False        -        0.711     -   0.713
-none         -  3      -     True        -        0.99     -   0.989
-none         -  3      -     False        -        0.861     -   0.854
-none         -  4      -     True        -        1.0     -   1.0
-none         -  4      -     False        -        0.731     -   0.739
-none         -  5      -     True        -        1.0     -   1.0
-none         -  5      -     False        -        0.913     -   0.92
+# SVM RESULTS, TRAIN/TEST FRACTION: 0.8
+# Normalization,  Set set_number, Outliers?,  Accu. Train, Accu Test
+line, 1, True, 0.889, 0.88
+SVC , 1, True, 0.807, 0.798
+line, 1, False, 0.886, 0.896
+SVC , 1, False, 0.787, 0.811
+line, 2, True, 0.907, 0.909
+SVC , 2, True, 0.806, 0.79
+line, 2, False, 0.846, 0.841
+SVC , 2, False, 0.726, 0.729
+line, 3, True, 0.987, 0.987
+SVC , 3, True, 0.953, 0.956
+line, 3, False, 0.898, 0.897
+SVC , 3, False, 0.772, 0.759
+line, 4, True, 1.0, 1.0
+SVC , 4, True, 0.983, 0.979
+line, 4, False, 0.911, 0.928
+xmin, 2, True, 0.926, 0.931
+SVC , 4, False, 0.806, 0.821
+line, 5, True, 1.0, 1.0
+SVC , 5, True, 0.999, 0.997
+line, 5, False, 0.922, 0.929
+SVC , 5, False, 0.875, 0.877
+line, 1, True, 0.889, 0.88
+SVC , 1, True, 0.924, 0.919
+line, 1, False, 0.888, 0.899
+SVC , 1, False, 0.922, 0.935
+line, 2, True, 0.907, 0.909
+SVC , 2, True, 0.936, 0.934
+line, 2, False, 0.848, 0.845
+SVC , 2, False, 0.876, 0.879
+line, 3, True, 0.987, 0.987
+SVC , 3, True, 0.985, 0.985
+line, 3, False, 0.9, 0.901
+SVC , 3, False, 0.931, 0.931
+line, 4, True, 1.0, 1.0
+SVC , 4, True, 0.999, 0.999
+line, 4, False, 0.914, 0.929
+SVC , 4, False, 0.939, 0.946
+line, 5, True, 1.0, 1.0
+SVC , 5, True, 1.0, 1.0
+line, 5, False, 0.924, 0.931
+SVC , 5, False, 0.974, 0.974
+line, 1, True, 0.839, 0.824
+SVC , 1, True, 0.984, 0.986
+line, 1, False, 0.667, 0.681
+SVC , 1, False, 0.986, 0.981
+line, 2, True, 0.767, 0.766
+SVC , 2, True, 1.0, 1.0
+line, 2, False, 0.55, 0.538
+SVC , 2, False, 0.999, 1.0
+line, 3, True, 0.942, 0.944
+SVC , 3, True, 1.0, 1.0
+line, 3, False, 0.572, 0.543
+SVC , 3, False, 1.0, 1.0
+line, 4, True, 0.965, 0.967
+SVC , 4, True, 1.0, 1.0
+line, 4, False, 0.577, 0.57
+SVC , 4, False, 1.0, 1.0
+line, 5, True, 1.0, 1.0
+SVC , 5, True, 1.0, 1.0
+line, 5, False, 0.597, 0.605
+SVC , 5, False, 1.0, 1.0
+xmin, 2, False, 0.853, 0.848
+xmin, 3, True, 0.996, 0.997

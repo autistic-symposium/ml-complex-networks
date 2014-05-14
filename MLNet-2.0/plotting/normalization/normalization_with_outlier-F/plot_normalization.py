@@ -2,11 +2,6 @@
  
  
 __author__ = "Mari Wahl"
-__copyright__ = "Copyright 2014"
-__credits__ = ["Mari Wahl"]
-__license__ = "GPL"
-__version__ = "2.0"
-__maintainer__ = "Mari Wahl"
 __email__ = "marina.w4hl@gmail.com"
 
 
@@ -90,6 +85,8 @@ def plotting(infox, biox, techx, socialx, infoy, bioy, techy, socialy , n, label
     plt.legend(loc='best')
 
 
+
+
 def main():  
 
     ''' OH MY GOD SO MANY FORS... I HOPE NOBODY SEES THIS'''
@@ -141,6 +138,8 @@ def main():
                         
 
                         plt.savefig(outputfile, orientation='landscape')
+
+                        
 
     print('Done!\n')
 

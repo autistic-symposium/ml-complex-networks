@@ -1,0 +1,126 @@
+
+
+
+Classification
+
+0.538, none, 2, F
+
+0.543, none, 3, F
+
+0.57, none, 4, F
+
+0.605, none, 5, F
+
+0.681, none, 1, F
+
+0.729, xmin, 2, F
+
+0.759, xmin, 3, F
+
+0.766, none, 2, T
+
+0.79, xmin, 2, T
+
+0.798, xmin, 1, T
+
+0.811, xmin, 1, F
+
+0.821, xmin, 4, F
+
+0.824, none, 1, T
+
+0.841, xmin, 2, F
+
+0.845, gauss, 2, F
+
+0.877, xmin, 5, F
+
+0.879, gauss, 2, F
+
+0.88, gauss, 1, T
+
+0.88, xmin, 1, T
+
+0.896, xmin, 1, F
+
+0.897, xmin, 3, F
+
+0.899, gauss, 1, F
+
+0.901, gauss, 3, F
+
+0.909, gauss, 2, T
+
+0.909, xmin, 2, T
+
+0.919, gauss, 1, T
+
+0.928, xmin, 4, F
+
+0.929, gauss, 4, F
+
+0.929, xmin, 5, F
+
+0.931, gauss, 3, F
+
+0.931, gauss, 5, F
+
+0.934, gauss, 2, T
+
+0.935, gauss, 1, F
+
+0.944, none, 3, T
+
+0.946, gauss, 4, F
+
+0.956, xmin, 3, T
+
+0.967, none, 4, T
+
+0.974, gauss, 5, F
+
+0.979, xmin, 4, T
+
+0.981, none, 1, F
+
+0.985, gauss, 3, T
+
+0.986, none, 1, T
+
+0.987, gauss, 3, T
+
+0.987, xmin, 3, T
+
+0.997, xmin, 5, T
+
+0.999, gauss, 4, T
+
+1.0, gauss, 4, T
+
+1.0, gauss, 5, T
+
+1.0, gauss, 5, T
+
+1.0, none, 2, F
+
+1.0, none, 2, T
+
+1.0, none, 3, F
+
+1.0, none, 3, T
+
+1.0, none, 4, F
+
+1.0, none, 4, T
+
+1.0, none, 5, F
+
+1.0, none, 5, T
+
+1.0, none, 5, T
+
+1.0, xmin, 4, T
+
+1.0, xmin, 5, T
+
+
