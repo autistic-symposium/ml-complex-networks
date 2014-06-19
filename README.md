@@ -4,42 +4,42 @@ MLNet - Classifying Complex Networks with Machine Learning
 Summary
 -------
 
-The study of  complex networks pervades all of the science. We can assign complex networks into four general classes (although there is some overlap between them):  technological networks (e.g., internet, the telephone network, power grids, transportation network),  information networks (e.g., the world wide web, citation networks),   biological networks (e.g., biochemical network, neutral networks, ecological networks), and  social networks. 
+The study of  complex networks pervades all of the science. We can assign complex networks into four general classes (although there is some overlap between them):  technological networks (e.g., Internet, the telephone network, power grids, transportation network),  information networks (e.g., the world wide web, citation networks),   biological networks (e.g., biochemical network, neutral networks, ecological networks), and  social networks.
 
-Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks. 
+Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks.
 
 
 Data
 -----
 
-To use this software you can extract the data and calculate the features with: 
-https://github.com/mariwahl/NetAna-Complex-Network-Analysis
+To use this software you can extract the data and calculate the features with [this repository] (https://github.com/mariwahl/NetAna-Complex-Network-Analysis)
 
-And cleanse the data with:
-https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser
+
+And cleanse the data with [this repository] (https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser)
+
 
 
 
 Features
 --------
 
-The feature vectors were extracting using MNet:
-https://github.com/mariwahl/NetAna-Complex-Network-Analysis
+The feature vectors were extracting using MNet in [this repository](https://github.com/mariwahl/NetAna-Complex-Network-Analysis)
+
 
 We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated).
 
-These vectors are parsed and cleansed using:
-https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser
+These vectors are parsed and cleansed using [this repository] (https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser)
+
 
 
 Feature Section and Classifiers
 ------------------------------
 
 We perform classification of the network features using many classifiers:
-- SVM (supervisioned)
-- Logistic Regression (supervisioned)
-- Adaboost (supervisioned)
-- EM (unsupervisioned)
+- SVM (supervised)
+- Logistic Regression (supervised)
+- Adaboost (supervised)
+- EM (unsupervised)
 
 
 
@@ -48,6 +48,15 @@ Analysis and Plots
 ------------------
 
 The comparisons of the the many classifiers and the plots are available under each classifier's folder.
+
+
+
+
+Be Social!
+----------
+
+Drop me a line or submit a patch!
+
 
 
 ***** RESULTS ******
@@ -102,10 +111,10 @@ none,     atrain: 0.745,   atest: 0.748
 
 Feature Pairwise:
 -----------------
-Type   Siz   Ord   Ass   Tra   Deg   Cor   NTr   NCl   Cnu   Clu   Eco   Ecc   Dia   Bet   Den   Rad   Scl   Com   Pag   Cen 
+Type   Siz   Ord   Ass   Tra   Deg   Cor   NTr   NCl   Cnu   Clu   Eco   Ecc   Dia   Bet   Den   Rad   Scl   Com   Pag   Cen
 
-xmin   0.145 0.545 1.0  0.34  0.845 0.585 0.655 0.0   0.32  1.0   0.0  0.505  0.465 0.715  0.97 0.54  0.45  0.0   1.0   1.0  
+xmin   0.145 0.545 1.0  0.34  0.845 0.585 0.655 0.0   0.32  1.0   0.0  0.505  0.465 0.715  0.97 0.54  0.45  0.0   1.0   1.0
 
-gauss  0.155 0.52  1.0  0.365 0.785 0.605 0.585 0.0   0.415 1.0   0.0  0.51   0.48  0.7    0.96 0.57  0.41  0.0   1.0   1.0  
+gauss  0.155 0.52  1.0  0.365 0.785 0.605 0.585 0.0   0.415 1.0   0.0  0.51   0.48  0.7    0.96 0.57  0.41  0.0   1.0   1.0
 
-none   0.155 0.565 1.0  0.3   0.845 0.55  0.6   0.0   0.48  1.0   0.0  0.5    0.495 0.69   0.97 0.475 0.47  0.0   1.0   1.0   
+none   0.155 0.565 1.0  0.3   0.845 0.55  0.6   0.0   0.48  1.0   0.0  0.5    0.495 0.69   0.97 0.475 0.47  0.0   1.0   1.0
