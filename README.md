@@ -8,6 +8,8 @@ The study of  complex networks pervades all of the science. We can assign comple
 
 Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks.
 
+The draft of my paper is [here](http://mariwahl.us/docs/ml_report.pdf)
+
 
 Data
 -----
