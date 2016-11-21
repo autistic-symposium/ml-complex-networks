@@ -61,7 +61,7 @@ $ pip install -r requirements.txt
 ----
 ## License
 
-When making a reference to my work, please use my twitter handle [_b_t_3_](https://twitter.com/_b_t_3_) or my [website](http://bt3gl.github.io/index.html).
+When making a reference to my work, please use my twitter handle [1bt337](https://twitter.com/1bt337) or my [website](http://bt3gl.github.io).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
 
