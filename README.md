@@ -23,7 +23,7 @@ And cleanse the data with [this repository](https://github.com/bt3gl/NetClean-Co
 --------
 ## Features
 
-The feature vectors were extracting using MNet in [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis)
+The feature vectors were extracting using MNet in [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis).
 
 
 We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated).
