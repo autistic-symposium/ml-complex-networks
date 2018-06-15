@@ -1,4 +1,4 @@
-# MLNet - Classifying Complex Networks with Machine Learning
+# 🍭 MLNet - Classifying Complex Networks with ML 🍭
 
 ## Summary
 
@@ -7,28 +7,28 @@ The study of  complex networks pervades all of the science. We can assign comple
 
 Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks.
 
-The draft of my paper is [here](http://mariwahl.us/docs/ml_report.pdf)
+Paper is available [here](https://github.com/bt3gl/NetAna-Complex-Network-Analysis/blob/master/final_report.pdf)
 
------
+
 ## Data
 
 
-To use this software you can extract the data and calculate the features with [this repository] (https://github.com/mariwahl/NetAna-Complex-Network-Analysis)
+To use this software you can extract the data and calculate the features with [this repository] (https://github.com/bt3gl/NetAna-Complex-Network-Analysis)
 
 
-And cleanse the data with [this repository] (https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser)
+And cleanse the data with [this repository] (https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser)
 
 
 
 --------
 ## Features
 
-The feature vectors were extracting using MNet in [this repository](https://github.com/mariwahl/NetAna-Complex-Network-Analysis)
+The feature vectors were extracting using MNet in [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis)
 
 
 We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated).
 
-These vectors are parsed and cleansed using [this repository] (https://github.com/mariwahl/NetClean-Complex-Networks-Data-Cleanser)
+These vectors are parsed and cleansed using [this repository] (https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
 
 
 ----
@@ -61,8 +61,7 @@ $ pip install -r requirements.txt
 ----
 ## License
 
-When making a reference to my work, please use my twitter handle [1bt337](https://twitter.com/1bt337) or my [website](http://bt3gl.github.io).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
