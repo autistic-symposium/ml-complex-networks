@@ -1,4 +1,4 @@
-# 🍭 MLNet - Classifying Complex Networks with ML 🍭
+# MLNet - Classifying Complex Networks with ML
 
 ## Summary
 
@@ -51,9 +51,12 @@ The comparisons of the the many classifiers and the plots are available under ea
 ----
 ## Installation
 
+Install dependencies in a virtual environment:
 
 ```
-$ pip install -r requirements.txt
+virtualenv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 
@@ -65,7 +68,4 @@ $ pip install -r requirements.txt
 ## License
 
 When making a reference to my work, please use my [website](http://bt3gl.github.io/index.html).
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
-
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
