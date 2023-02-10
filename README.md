@@ -22,10 +22,7 @@ Characterizing complex network's structure is a key to understand any unifying p
 
 <br>
 
-To use this software you can extract the data and calculate the features with [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis).
-
-
-And cleanse the data with [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
+To use this software you can extract the data and calculate the features with [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis). Cleanse the data with [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
 
 
 <br>
@@ -39,9 +36,7 @@ And cleanse the data with [this repository](https://github.com/bt3gl/NetClean-Co
 The feature vectors were extracting using MNet in [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis).
 
 
-We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated).
-
-These vectors are parsed and cleansed using [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
+We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated). These vectors are parsed and cleansed using [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
 
 <br>
 
