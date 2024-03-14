@@ -1,8 +1,8 @@
 
 #!/usr/bin/env python
  
-__author__ = "Mari Wahl"
-__email__ = "marina.w4hl@gmail.com"
+__author__ = "Mia Stein"
+__email__ = ""
 
 
 ''' Performs logistic regression to our complex networks '''

@@ -1,20 +1,20 @@
 #!/usr/bin/env python
  
  
-__author__ = "Mari Wahl"
+__author__ = "Mia Stein"
 __copyright__ = "Copyright 2014"
-__credits__ = ["Mari Wahl"]
+__credits__ = ["Mia Stein"]
 __license__ = "GPL"
 __version__ = "2.0"
-__maintainer__ = "Mari Wahl"
-__email__ = "marina.w4hl@gmail.com"
+__maintainer__ = "Mia Stein"
+__email__ = ""
 
 
 '''
 Normalization plots for each feature and each type of graphs.
 The normalization shows the feature in tersm of the order of the network.
 
-mari wahl @ 2014
+Mia Stein @ 2014
 '''
 
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
-# marina von steinkirch @2014
-# steinkirch at gmail
+# mia stein, 2014
+
 
 ''' This program shows the application of boosting for weak
     classifiers given by decision stumps '''

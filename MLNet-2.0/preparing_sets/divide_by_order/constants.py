@@ -2,13 +2,13 @@
 #!/usr/bin/env python
  
  
-__author__ = "Mari Wahl"
+__author__ = "Mia Stein"
 __copyright__ = "Copyright 2014, The Cogent Project"
-__credits__ = ["Mari Wahl"]
+__credits__ = ["Mia Stein"]
 __license__ = "GPL"
 __version__ = "2.0"
-__maintainer__ = "Mari Wahl"
-__email__ = "marina.w4hl@gmail.com"
+__maintainer__ = "Mia Stein"
+__email__ = ""
 
 
 INPUT_FILE = '../../data/vectors_together/together.data'

@@ -1,15 +1,15 @@
 #!/usr/bin/env python
  
  
-__author__ = "Mari Wahl"
-__email__ = "marina.w4hl@gmail.com"
+__author__ = "Mia Stein"
+__email__ = ""
 
 
 '''
 Normalization plots for each feature and each type of graphs.
 The normalization shows the feature in tersm of the order of the network.
 
-mari wahl @ 2014
+Mia Stein @ 2014
 '''
 
 

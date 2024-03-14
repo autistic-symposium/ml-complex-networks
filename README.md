@@ -12,7 +12,7 @@ Characterizing complex network's structure is a key to understand any unifying p
 
 <br>
 
-#### [👉 Paper and simulation results.](https://github.com/bt3gl/NetAna-Complex-Network-Analysis/blob/master/final_report.pdf)
+#### [👉 Paper and simulation results.](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis/blob/master/final_report.pdf)
 
 <br>
 
@@ -22,7 +22,7 @@ Characterizing complex network's structure is a key to understand any unifying p
 
 <br>
 
-To use this software you can extract the data and calculate the features with [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis). Cleanse the data with [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
+To use this software you can extract the data and calculate the features with [this repository](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis). Cleanse the data with [this repository](https://github.com/go-outside-labs/NetClean-Complex-Networks-Data-Cleanser).
 
 
 <br>
@@ -33,10 +33,10 @@ To use this software you can extract the data and calculate the features with [t
 
 <br>
 
-The feature vectors were extracting using MNet in [this repository](https://github.com/bt3gl/NetAna-Complex-Network-Analysis).
+The feature vectors were extracting using MNet in [this repository](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis).
 
 
-We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated). These vectors are parsed and cleansed using [this repository](https://github.com/bt3gl/NetClean-Complex-Networks-Data-Cleanser).
+We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated). These vectors are parsed and cleansed using [this repository](https://github.com/go-outside-labs/NetClean-Complex-Networks-Data-Cleanser).
 
 <br>
 
