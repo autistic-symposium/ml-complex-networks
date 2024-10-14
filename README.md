@@ -1,80 +1,68 @@
-## MLNet - Classifying Complex Graph Networks with ML
+## MLNet: classifying complex graph networks with machine learning
 
 <br>
 
-### Summary
+##### the study of  complex networks permeates all of the science
 
-<br>
+* we can assign complex networks into four general classes (although there is some overlap between them):
+  * technological networks (e.g., Internet, the telephone network, power grids, transportation network)
+  * information networks (e.g., the world wide web, citation networks)
+  * biological networks (e.g., biochemical network, neural networks, ecological networks)
+  * social networks
 
-The study of  complex networks pervades all of the science. We can assign complex networks into four general classes (although there is some overlap between them):  technological networks (e.g., Internet, the telephone network, power grids, transportation network),  information networks (e.g., the world wide web, citation networks),   biological networks (e.g., biochemical network, neutral networks, ecological networks), and  social networks.
+##### characterizing complex network's structures is a key to understanding any unifying principles underlying their topology
 
-Characterizing complex network's structure is a key to understand any unifying principles underlying their topology. Several previous works  have shown that many topological properties can vary for different types of system. However these works generally focus only a few characteristics at time.   In this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks. In a  second part, these features  are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks.   
+* previous works have shown that many topological properties can vary for different types of system, however these works generally focus only a few characteristics at the time
+* in this project, we present the first part of a method to characterize complex networks by performing an extensive analysis of the global and local topological features of networks
+* in a second part, these features are used into input vectors for a SVN classifier, establishing an efficient way of learning the classification of complex networks  
 
-<br>
-
-#### [👉 Paper and simulation results.](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis/blob/master/final_report.pdf)
+##### [👉 read the final research paper here](https://github.com/autistic-symposium/ml-graph-network-analyser/blob/master/on-classifying-complex-networks-by-their-features.pdf)
 
 <br>
 
 ---
 
-### Data
+### the input data and features
 
 <br>
 
-To use this software you can extract the data and calculate the features with [this repository](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis). Cleanse the data with [this repository](https://github.com/go-outside-labs/NetClean-Complex-Networks-Data-Cleanser).
-
-
-<br>
-
---------
-
-### Features
-
-<br>
-
-The feature vectors were extracting using MNet in [this repository](https://github.com/go-outside-labs/NetAna-Complex-Network-Analysis).
-
-
-We have vectors for different normalization (Snowball and Metropolis Hastings Random Walk samplings) for different sizes. We also have vectors for the entire graphs for some of the features (that were possible to be calculated). These vectors are parsed and cleansed using [this repository](https://github.com/go-outside-labs/NetClean-Complex-Networks-Data-Cleanser).
+* prior to using this software:
+  * all vectors must be parsed and cleansed using my **[ml-netclean](https://github.com/autistic-symposium/ml-netclean)**
+  * all features must be extracted using my **[ml-graph-network-analyser](https://github.com/autistic-symposium/ml-graph-network-analyser)**
+* vectors can have different normalizations (snowball and metropolis hastings random walk samplings for different sizes)
+* vectors can contain entire graphs for some of the features (that were possible to be calculated)
 
 <br>
 
 ----
 
-<br>
-
-### Feature Section and Classifiers
+### feature selection and classifiers
 
 <br>
 
-We perform classification of the network features using many classifiers:
-
-- SVM (supervised)
-- Logistic Regression (supervised)
-- Adaboost (supervised)
-- EM (unsupervised)
+* we perform the classification of the network features using several classifiers:
+  * SVM (supervised)
+  * logistic regression (supervised)
+  * adaboost (supervised)
+  * EM (unsupervised)
 
 <br>
 
 -----
 
-### Analysis and Plots
+### analysis and plots
 
 <br>
 
-
-The comparisons of the the many classifiers and the plots are available under each classifier's folder.
+* comparisons of many classifiers and the plots are available under each classifier's folder.
 
 <br>
 
 ----
 
-### Installation
+### installation
 
 <br>
-
-Install dependencies in a virtual environment:
 
 ```
 virtualenv .venv
@@ -83,9 +71,3 @@ pip install -r requirements.txt
 ```
 
 <br>
-
-
-----
-
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
